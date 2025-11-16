@@ -1,0 +1,68 @@
+m=1;
+c=0.2;
+
+A=[0 1;
+    0 -c/m];
+
+B=[0;
+    1/m];
+
+% ChooseQ and R
+Scenario = 1;   % 1= cheap control
+                % 2= expensive control
+                % 3 = ignore position
+switch Scenario
+    case 1
+        Q= diag([1 1]);
+        R= [0.01];
+
+    case 2
+        Q= diag([1 1]);
+        R= [1000];
+
+    case 3 
+        Q= diag([0.001 1]);
+        R= [1];
+    otherwise 
+        error('unknown method')
+end
+
+[K,S,E] = lqr(A,B,Q,R);
+
+% Initial Condition 
+T_final = 30;
+x0=[pi;
+    -2];
+out = sim('LQR_prac');
+
+% Get the logged timeseries objects
+State_TS = out.logsout.get('State');
+Input_TS = out.logsout.get('Input');
+
+t = State_TS.Time;
+x1 = State_TS.Data(:,1); 
+x2 = State_TS.Data(:,2);
+u1 = Input_TS.Data(:,1);
+%sim('LQR_prac')
+%t= sim_x.time;
+%x1= sim_x(:,1);
+%x2= sim_x(:,2);
+%u1= sim_u(:,1);
+
+%plot
+figure
+subplot(3,1,1)
+title(['Scenario',num2str(Scenario)])
+plot(t,x1,'LineWidth',3)
+grid on
+legend('x_1')
+
+subplot(3,1,2)
+plot(t,x2,'LineWidth',3)
+grid on
+legend('x_2')
+
+subplot(3,1,3)
+plot(t,u1,'LineWidth',3)
+grid on
+legend('u_1')
