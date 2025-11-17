@@ -8,7 +8,7 @@ B=[0;
     1/m];
 
 % ChooseQ and R
-Scenario = 3;   % 1= cheap control
+Scenario = 1;   % 1= cheap control
                 % 2= expensive control
                 % 3 = ignore position
 switch Scenario
@@ -61,4 +61,4 @@ grid on
 legend('u1')
 title('Control');
 
-sgtitle('Only Non-zero velocity is Expensive.', 'FontSize', 14, 'FontWeight');
+sgtitle('Only Non-zero velocity is Expensive.', 'FontSize', 14);
