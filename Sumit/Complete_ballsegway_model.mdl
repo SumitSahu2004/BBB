@@ -1,0 +1,4314 @@
+# MathWorks OPC Text Package
+Model {
+  Version  24.2
+  Description "Simulink model saved in R2024b"
+}
+__MWOPC_PACKAGE_BEGIN__ R2024b
+__MWOPC_PART_BEGIN__ /[Content_Types].xml
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types">
+  <Default ContentType="application/vnd.mathworks.simulink.graphicalInterface+json" Extension="json"/>
+  <Default ContentType="application/vnd.mathworks.matlab.mxarray+binary" Extension="mxarray"/>
+  <Default ContentType="application/vnd.openxmlformats-package.relationships+xml" Extension="rels"/>
+  <Default ContentType="application/vnd.mathworks.simulink.mdl+xml" Extension="xml"/>
+  <Override ContentType="application/vnd.openxmlformats-package.core-properties+xml" PartName="/metadata/coreProperties.xml"/>
+  <Override ContentType="application/vnd.mathworks.package.coreProperties+xml" PartName="/metadata/mwcoreProperties.xml"/>
+  <Override ContentType="application/vnd.mathworks.package.corePropertiesExtension+xml" PartName="/metadata/mwcorePropertiesExtension.xml"/>
+  <Override ContentType="application/vnd.mathworks.package.corePropertiesReleaseInfo+xml" PartName="/metadata/mwcorePropertiesReleaseInfo.xml"/>
+  <Override ContentType="application/vnd.mathworks.simulink.configSet+xml" PartName="/simulink/configSet0.xml"/>
+  <Override ContentType="application/vnd.mathworks.simulink.configSetInfo+xml" PartName="/simulink/configSetInfo.xml"/>
+  <Override ContentType="application/vnd.mathworks.simulink.mf0+xml" PartName="/simulink/modelDictionary.xml"/>
+  <Override ContentType="application/vnd.mathworks.simulink.pluginParameters+xml" PartName="/simulink/plugins/sysarch_app_plugin.xml"/>
+  <Override ContentType="application/vnd.mathworks.simulink.ScheduleCore+xml" PartName="/simulink/ScheduleCore.xml"/>
+  <Override ContentType="application/vnd.mathworks.simulink.ScheduleEditor+xml" PartName="/simulink/ScheduleEditor.xml"/>
+  <Override ContentType="application/vnd.mathworks.stateflow.chart+xml" PartName="/simulink/stateflow/chart_28.xml"/>
+  <Override ContentType="application/vnd.mathworks.stateflow.chart+xml" PartName="/simulink/stateflow/chart_38.xml"/>
+  <Override ContentType="application/vnd.mathworks.stateflow.chart+xml" PartName="/simulink/stateflow/chart_48.xml"/>
+  <Override ContentType="application/vnd.mathworks.stateflow.chart+xml" PartName="/simulink/stateflow/chart_58.xml"/>
+  <Override ContentType="application/vnd.mathworks.stateflow.chart+xml" PartName="/simulink/stateflow/chart_70.xml"/>
+  <Override ContentType="application/vnd.mathworks.stateflow.chart+xml" PartName="/simulink/stateflow/chart_76.xml"/>
+  <Override ContentType="application/vnd.mathworks.stateflow.machine+xml" PartName="/simulink/stateflow/machine.xml"/>
+  <Override ContentType="application/vnd.mathworks.simulink.blockDiagram+xml" PartName="/simulink/windowsInfo.xml"/>
+</Types>
+
+__MWOPC_PART_BEGIN__ /_rels/.rels
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
+  <Relationship Id="blockDiagram" Target="simulink/blockdiagram.xml" Type="http://schemas.mathworks.com/simulink/2010/relationships/blockDiagram"/>
+  <Relationship Id="blockDiagramDefaults" Target="simulink/bddefaults.xml" Type="http://schemas.mathworks.com/simulink/2017/relationships/blockDiagramDefaults"/>
+  <Relationship Id="configSetInfo" Target="simulink/configSetInfo.xml" Type="http://schemas.mathworks.com/simulink/2014/relationships/configSetInfo"/>
+  <Relationship Id="modelDictionary" Target="simulink/modelDictionary.xml" Type="http://schemas.mathworks.com/simulinkModel/2016/relationships/modelDictionary"/>
+  <Relationship Id="rId1" Target="metadata/mwcoreProperties.xml" Type="http://schemas.mathworks.com/package/2012/relationships/coreProperties"/>
+  <Relationship Id="rId2" Target="metadata/mwcorePropertiesExtension.xml" Type="http://schemas.mathworks.com/package/2014/relationships/corePropertiesExtension"/>
+  <Relationship Id="rId3" Target="metadata/mwcorePropertiesReleaseInfo.xml" Type="http://schemas.mathworks.com/package/2019/relationships/corePropertiesReleaseInfo"/>
+  <Relationship Id="rId4" Target="metadata/coreProperties.xml" Type="http://schemas.openxmlformats.org/package/2006/relationships/metadata/core-properties"/>
+</Relationships>
+
+__MWOPC_PART_BEGIN__ /metadata/coreProperties.xml
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<cp:coreProperties xmlns:cp="http://schemas.openxmlformats.org/package/2006/metadata/core-properties" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcmitype="http://purl.org/dc/dcmitype/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <cp:category>model</cp:category>
+  <dcterms:created xsi:type="dcterms:W3CDTF">2025-11-16T17:50:11Z</dcterms:created>
+  <dc:creator>sumit</dc:creator>
+  <cp:lastModifiedBy>yugan</cp:lastModifiedBy>
+  <dcterms:modified xsi:type="dcterms:W3CDTF">2025-11-18T09:51:11Z</dcterms:modified>
+  <cp:revision>1.8</cp:revision>
+  <cp:version>R2024b</cp:version>
+</cp:coreProperties>
+
+__MWOPC_PART_BEGIN__ /metadata/mwcoreProperties.xml
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<mwcoreProperties xmlns="http://schemas.mathworks.com/package/2012/coreProperties">
+  <contentType>application/vnd.mathworks.simulink.model</contentType>
+  <contentTypeFriendlyName>Simulink Model</contentTypeFriendlyName>
+  <matlabRelease>R2024b</matlabRelease>
+</mwcoreProperties>
+
+__MWOPC_PART_BEGIN__ /metadata/mwcorePropertiesExtension.xml
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<mwcoreProperties xmlns="http://schemas.mathworks.com/package/2014/corePropertiesExtension">
+  <uuid>38129d77-2a94-4cd6-af77-7b677013b899</uuid>
+</mwcoreProperties>
+
+__MWOPC_PART_BEGIN__ /metadata/mwcorePropertiesReleaseInfo.xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Version information for MathWorks R2024b Release -->
+<MathWorks_version_info>
+  <version>24.2.0.2923080</version>
+  <release>R2024b</release>
+  <description>Update 6</description>
+  <date>Mar 28 2025</date>
+  <checksum>3365125298</checksum>
+</MathWorks_version_info>
+
+__MWOPC_PART_BEGIN__ /simulink/_rels/blockdiagram.xml.rels
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
+  <Relationship Id="CanvasColor_87" Target="bdmxdata/CanvasColor_87.mxarray" Type="http://schemas.mathworks.com/simulinkModel/2015/relationships/modelMxArray"/>
+  <Relationship Id="FrameSettings_87" Target="bdmxdata/FrameSettings_87.mxarray" Type="http://schemas.mathworks.com/simulinkModel/2015/relationships/modelMxArray"/>
+  <Relationship Id="NumPorts_87" Target="bdmxdata/NumPorts_87.mxarray" Type="http://schemas.mathworks.com/simulinkModel/2015/relationships/modelMxArray"/>
+  <Relationship Id="ScheduleCore" Target="ScheduleCore.xml" Type="http://schemas.mathworks.com/simulink/2013/relationships/ScheduleCore"/>
+  <Relationship Id="ScheduleEditor" Target="ScheduleEditor.xml" Type="http://schemas.mathworks.com/simulink/2013/relationships/ScheduleEditor"/>
+  <Relationship Id="graphicalInterface" Target="graphicalInterface.json" Type="http://schemas.mathworks.com/simulinkModel/2014/relationships/graphicalInterface"/>
+  <Relationship Id="stateflow_machine" Target="stateflow/machine.xml" Type="http://schemas.mathworks.com/simulinkModel/2014/relationships/stateflowMachine"/>
+  <Relationship Id="sysarch_app_plugin" Target="plugins/sysarch_app_plugin.xml" Type="http://schemas.mathworks.com/simulinkModel/2014/relationships/pluginParameters"/>
+  <Relationship Id="system_root" Target="systems/system_root.xml" Type="http://schemas.mathworks.com/simulink/2010/relationships/system"/>
+  <Relationship Id="windowsInfo" Target="windowsInfo.xml" Type="http://schemas.mathworks.com/simulinkModel/2019/relationships/windowsInfo"/>
+</Relationships>
+
+__MWOPC_PART_BEGIN__ /simulink/_rels/configSetInfo.xml.rels
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
+  <Relationship Id="configSet0" Target="configSet0.xml" Type="http://schemas.mathworks.com/simulink/2014/relationships/configSet"/>
+</Relationships>
+
+__MWOPC_PART_BEGIN__ /simulink/bddefaults.xml
+<?xml version="1.0" encoding="utf-8"?>
+<BlockDiagramDefaults>
+  <MaskDefaults SelfModifiable="off">
+    <Display IconFrame="on" IconOpaque="opaque" RunInitForIconRedraw="analyze" IconRotate="none" PortRotate="default" IconUnits="autoscale"/>
+    <MaskParameter Evaluate="on" Tunable="on" NeverSave="off" Internal="off" ReadOnly="off" Enabled="on" Visible="on" ToolTip="on"/>
+    <DialogControl>
+      <ControlOptions Visible="on" Enabled="on" Row="new" HorizontalStretch="on" PromptLocation="top" Orientation="horizontal" Scale="linear" TextType="Plain Text" Expand="off" ShowFilter="on" ShowParameterName="on" WordWrap="on" AlignPrompts="off"/>
+    </DialogControl>
+  </MaskDefaults>
+</BlockDiagramDefaults>
+
+__MWOPC_PART_BEGIN__ /simulink/bdmxdata/CanvasColor_87.mxarray BASE64
+AAFJTQAAAAAOAAAASAAAAAYAAAAIAAAABgAAAAAAAAAFAAAACAAAAAEAAAADAAAAAQAAAAAAAAAJ
+AAAAGAAAAF9fX19fX+8/X19fX19f7z9fX19fX1/vPw==
+__MWOPC_PART_BEGIN__ /simulink/bdmxdata/FrameSettings_87.mxarray BASE64
+AAFJTQAAAAAOAAAAMAAAAAYAAAAIAAAACQIAAAAAAAAFAAAACAAAAAEAAAACAAAAAQAAAAAAAAAC
+AAIAAAAAAA==
+__MWOPC_PART_BEGIN__ /simulink/bdmxdata/NumPorts_87.mxarray BASE64
+AAFJTQAAAAAOAAAAOAAAAAYAAAAIAAAABgAAAAAAAAAFAAAACAAAAAEAAAABAAAAAQAAAAAAAAAJ
+AAAACAAAAAAAAAAAAABA==
+__MWOPC_PART_BEGIN__ /simulink/blockdiagram.xml
+<?xml version="1.0" encoding="utf-8"?>
+<ModelInformation Version="1.0">
+  <Model>
+    <P Name="ModelUUID">ec21f244-81ce-4b8a-9bec-1037ad281237</P>
+    <P Name="LastSavedArchitecture">win64</P>
+    <ConfigManagerSettings>
+      <P Name="ModifiedByFormat">%&lt;Auto&gt;</P>
+      <P Name="ModifiedDateFormat">%&lt;Auto&gt;</P>
+      <P Name="ModelVersionFormat">%&lt;AutoIncrement:1.8&gt;</P>
+    </ConfigManagerSettings>
+    <EditorSettings>
+      <P Name="SampleTimeColors">on</P>
+      <P Name="SampleTimeAnnotations">on</P>
+    </EditorSettings>
+    <SimulationSettings>
+      <P Name="SimulationMode">normal</P>
+      <Object PropName="DataLoggingOverride" ObjectID="1" ClassName="Simulink.SimulationData.ModelLoggingInfo">
+        <P Name="model_" Class="char">$bdroot</P>
+        <P Name="overrideMode_" Class="uint32">0U</P>
+        <Array PropName="logAsSpecifiedByModels_" Type="Cell" Dimension="1*1">
+          <Cell Class="char">$bdroot</Cell>
+        </Array>
+        <Array PropName="logAsSpecifiedByModelsSSIDs_" Type="Cell" Dimension="1*1">
+          <Cell Class="double">[]</Cell>
+        </Array>
+      </Object>
+    </SimulationSettings>
+    <EngineSettings>
+      <P Name="ConfigurableSubsystemUsage">warning</P>
+    </EngineSettings>
+    <ConcurrentExecutionSettings>
+      <Object PropName="DataTransfer" ObjectID="2" ClassName="Simulink.GlobalDataTransfer">
+        <P Name="DefaultTransitionBetweenSyncTasks" Class="char">Ensure deterministic transfer (maximum delay)</P>
+        <P Name="DefaultTransitionBetweenAsyncTasks" Class="char">Ensure data integrity only</P>
+        <P Name="DefaultTransitionBetweenContTasks" Class="char">Ensure deterministic transfer (minimum delay)</P>
+        <P Name="DefaultExtrapolationMethodBetweenContTasks" Class="char">None</P>
+      </Object>
+    </ConcurrentExecutionSettings>
+    <System Ref="system_root"/>
+  </Model>
+</ModelInformation>
+
+__MWOPC_PART_BEGIN__ /simulink/configSet0.xml
+<?xml version="1.0" encoding="utf-8"?>
+<ConfigSet>
+  <Object Version="24.1.0" ClassName="Simulink.ConfigSet">
+    <P Name="DisabledProps" Class="double">[]</P>
+    <P Name="Description"/>
+    <Array PropName="Components" Type="Handle" Dimension="1*9">
+      <Object ObjectID="2" Version="24.1.0" ClassName="Simulink.SolverCC">
+        <P Name="DisabledProps" Class="double">[]</P>
+        <P Name="Description"/>
+        <P Name="Components" Class="double">[]</P>
+        <P Name="StartTime">0.0</P>
+        <P Name="StopTime">10</P>
+        <P Name="AbsTol">auto</P>
+        <P Name="AutoScaleAbsTol">on</P>
+        <P Name="FixedStep">auto</P>
+        <P Name="InitialStep">auto</P>
+        <P Name="MaxOrder">5</P>
+        <P Name="ZcThreshold">auto</P>
+        <P Name="ConsecutiveZCsStepRelTol">10*128*eps</P>
+        <P Name="MaxConsecutiveZCs">1000</P>
+        <P Name="ExtrapolationOrder">4</P>
+        <P Name="NumberNewtonIterations">1</P>
+        <P Name="MaxStep">auto</P>
+        <P Name="MinStep">auto</P>
+        <P Name="MaxConsecutiveMinStep">1</P>
+        <P Name="RelTol">1e-3</P>
+        <P Name="EnableMultiTasking">off</P>
+        <P Name="AllowMultiTaskInputOutput">off</P>
+        <P Name="ConcurrentTasks">off</P>
+        <P Name="SolverName">VariableStepAuto</P>
+        <P Name="SolverJacobianMethodControl">auto</P>
+        <P Name="DaesscMode">auto</P>
+        <P Name="ShapePreserveControl">DisableAll</P>
+        <P Name="ZeroCrossControl">UseLocalSettings</P>
+        <P Name="ZeroCrossAlgorithm">Nonadaptive</P>
+        <P Name="AlgebraicLoopSolver">Auto</P>
+        <P Name="SolverInfoToggleStatus">off</P>
+        <P Name="IsAutoAppliedInSIP">off</P>
+        <P Name="SolverResetMethod">Fast</P>
+        <P Name="PositivePriorityOrder">off</P>
+        <P Name="AutoInsertRateTranBlk">off</P>
+        <P Name="SampleTimeConstraint">Unconstrained</P>
+        <P Name="InsertRTBMode">Whenever possible</P>
+        <P Name="SampleTimeProperty" Class="double">[]</P>
+        <P Name="DecoupledContinuousIntegration">off</P>
+        <P Name="MinimalZcImpactIntegration">off</P>
+        <P Name="ODENIntegrationMethod">ode3</P>
+        <P Name="EnableFixedStepZeroCrossing">off</P>
+        <P Name="MaxZcPerStep">2</P>
+        <P Name="MaxZcBracketingIterations">10</P>
+      </Object>
+      <Object ObjectID="3" Version="24.1.0" ClassName="Simulink.DataIOCC">
+        <P Name="DisabledProps" Class="double">[]</P>
+        <P Name="Description"/>
+        <P Name="Components" Class="double">[]</P>
+        <P Name="Decimation">1</P>
+        <P Name="ExternalInput">[t, u]</P>
+        <P Name="FinalStateName">xFinal</P>
+        <P Name="InitialState">xInitial</P>
+        <P Name="LimitDataPoints">off</P>
+        <P Name="MaxDataPoints">1000</P>
+        <P Name="LoadExternalInput">off</P>
+        <P Name="LoadInitialState">off</P>
+        <P Name="SaveFinalState">off</P>
+        <P Name="SaveOperatingPoint">off</P>
+        <P Name="SaveFormat">Dataset</P>
+        <P Name="SignalLoggingSaveFormat">Dataset</P>
+        <P Name="SaveOutput">on</P>
+        <P Name="SaveState">off</P>
+        <P Name="SignalLogging">on</P>
+        <P Name="DSMLogging">on</P>
+        <P Name="StreamToWks">on</P>
+        <P Name="InspectSignalLogs">off</P>
+        <P Name="VisualizeSimOutput">on</P>
+        <P Name="StreamToWorkspace">off</P>
+        <P Name="StreamVariableName">streamout</P>
+        <P Name="SaveTime">on</P>
+        <P Name="ReturnWorkspaceOutputs">on</P>
+        <P Name="StateSaveName">xout</P>
+        <P Name="TimeSaveName">tout</P>
+        <P Name="OutputSaveName">yout</P>
+        <P Name="SignalLoggingName">logsout</P>
+        <P Name="DSMLoggingName">dsmout</P>
+        <P Name="OutputOption">RefineOutputTimes</P>
+        <P Name="OutputTimes">[]</P>
+        <P Name="ReturnWorkspaceOutputsName">out</P>
+        <P Name="Refine">1</P>
+        <P Name="LoggingToFile">off</P>
+        <P Name="DatasetSignalFormat">timeseries</P>
+        <P Name="LoggingFileName">out.mat</P>
+        <P Name="LoggingIntervals">[-inf, inf]</P>
+      </Object>
+      <Object ObjectID="4" Version="24.1.0" ClassName="Simulink.OptimizationCC">
+        <Array PropName="DisabledProps" Type="Cell" Dimension="1*10">
+          <Cell Class="char">BooleansAsBitfields</Cell>
+          <Cell Class="char">PassReuseOutputArgsAs</Cell>
+          <Cell Class="char">PassReuseOutputArgsThreshold</Cell>
+          <Cell Class="char">ZeroExternalMemoryAtStartup</Cell>
+          <Cell Class="char">ZeroInternalMemoryAtStartup</Cell>
+          <Cell Class="char">OptimizeModelRefInitCode</Cell>
+          <Cell Class="char">NoFixptDivByZeroProtection</Cell>
+          <Cell Class="char">UseSpecifiedMinMax</Cell>
+          <Cell Class="char">EfficientTunableParamExpr</Cell>
+          <Cell Class="char">RemoveLocalVariableInitialization</Cell>
+        </Array>
+        <P Name="Description"/>
+        <P Name="Components" Class="double">[]</P>
+        <P Name="BlockReduction">on</P>
+        <P Name="BooleanDataType">on</P>
+        <P Name="ConditionallyExecuteInputs">on</P>
+        <P Name="DefaultParameterBehavior">Tunable</P>
+        <P Name="UseDivisionForNetSlopeComputation">off</P>
+        <P Name="GainParamInheritBuiltInType">off</P>
+        <P Name="UseFloatMulNetSlope">off</P>
+        <P Name="InheritOutputTypeSmallerThanSingle">off</P>
+        <P Name="DefaultUnderspecifiedDataType">double</P>
+        <P Name="UseSpecifiedMinMax">off</P>
+        <P Name="InlineInvariantSignals">off</P>
+        <P Name="OptimizeBlockIOStorage">on</P>
+        <P Name="BufferReuse">on</P>
+        <P Name="ReuseModelBlockBuffer">on</P>
+        <P Name="EnhancedBackFolding">off</P>
+        <P Name="CachingGlobalReferences">off</P>
+        <P Name="GlobalBufferReuse">on</P>
+        <P Name="StrengthReduction">off</P>
+        <P Name="AdvancedOptControl"/>
+        <P Name="ExpressionFolding">on</P>
+        <P Name="BooleansAsBitfields">off</P>
+        <P Name="BitfieldContainerType">uint_T</P>
+        <P Name="BitwiseOrLogicalOp">Same as modeled</P>
+        <P Name="EnableMemcpy">on</P>
+        <P Name="MemcpyThreshold">64</P>
+        <P Name="PassReuseOutputArgsAs">Structure reference</P>
+        <P Name="PassReuseOutputArgsThreshold">12</P>
+        <P Name="ExpressionDepthLimit">128</P>
+        <P Name="LocalBlockOutputs">on</P>
+        <P Name="RollThreshold">5</P>
+        <P Name="StateBitsets">off</P>
+        <P Name="DataBitsets">off</P>
+        <P Name="ActiveStateOutputEnumStorageType">Native Integer</P>
+        <P Name="ZeroExternalMemoryAtStartup">on</P>
+        <P Name="ZeroInternalMemoryAtStartup">on</P>
+        <P Name="InitFltsAndDblsToZero">off</P>
+        <P Name="NoFixptDivByZeroProtection">off</P>
+        <P Name="EfficientFloat2IntCast">off</P>
+        <P Name="EfficientMapNaN2IntZero">on</P>
+        <P Name="LifeSpan">auto</P>
+        <P Name="ClockResolution">-1</P>
+        <P Name="MaxStackSize">Inherit from target</P>
+        <P Name="BufferReusableBoundary">on</P>
+        <P Name="RemoveLocalVariableInitialization">on</P>
+        <P Name="SimCompilerOptimization">off</P>
+        <P Name="AccelVerboseBuild">off</P>
+        <P Name="OptimizeBlockOrder">off</P>
+        <P Name="OptimizeDataStoreBuffers">on</P>
+        <P Name="BusAssignmentInplaceUpdate">on</P>
+        <P Name="DifferentSizesBufferReuse">off</P>
+        <P Name="UseRowMajorAlgorithm">off</P>
+        <P Name="OptimizationLevel">level2</P>
+        <P Name="OptimizationPriority">Balanced</P>
+        <P Name="OptimizationCustomize">on</P>
+        <P Name="LabelGuidedReuse">off</P>
+        <P Name="MultiThreadedLoops">off</P>
+        <P Name="AutoScheduleForLoops">off</P>
+        <P Name="DenormalBehavior">GradualUnderflow</P>
+        <P Name="EfficientTunableParamExpr">off</P>
+      </Object>
+      <Object ObjectID="5" Version="24.1.0" ClassName="Simulink.DebuggingCC">
+        <Array PropName="DisabledProps" Type="Cell" Dimension="1*1">
+          <Cell Class="char">UseOnlyExistingSharedCode</Cell>
+        </Array>
+        <P Name="Description"/>
+        <P Name="Components" Class="double">[]</P>
+        <P Name="RTPrefix">error</P>
+        <P Name="ConsistencyChecking">none</P>
+        <P Name="ArrayBoundsChecking">none</P>
+        <P Name="SignalInfNanChecking">none</P>
+        <P Name="StringTruncationChecking">error</P>
+        <P Name="SignalRangeChecking">none</P>
+        <P Name="ReadBeforeWriteMsg">UseLocalSettings</P>
+        <P Name="WriteAfterWriteMsg">UseLocalSettings</P>
+        <P Name="WriteAfterReadMsg">UseLocalSettings</P>
+        <P Name="AlgebraicLoopMsg">none</P>
+        <P Name="ArtificialAlgebraicLoopMsg">warning</P>
+        <P Name="SaveWithDisabledLinksMsg">warning</P>
+        <P Name="SaveWithParameterizedLinksMsg">warning</P>
+        <P Name="CheckSSInitialOutputMsg">on</P>
+        <P Name="UnderspecifiedInitializationDetection">Simplified</P>
+        <P Name="MergeDetectMultiDrivingBlocksExec">error</P>
+        <P Name="CheckExecutionContextPreStartOutputMsg">off</P>
+        <P Name="SignalResolutionControl">UseLocalSettings</P>
+        <P Name="BlockPriorityViolationMsg">warning</P>
+        <P Name="MinStepSizeMsg">warning</P>
+        <P Name="TimeAdjustmentMsg">none</P>
+        <P Name="MaxConsecutiveZCsMsg">error</P>
+        <P Name="MaskedZcDiagnostic">warning</P>
+        <P Name="IgnoredZcDiagnostic">warning</P>
+        <P Name="SolverPrmCheckMsg">none</P>
+        <P Name="InheritedTsInSrcMsg">warning</P>
+        <P Name="MultiTaskDSMMsg">error</P>
+        <P Name="MultiTaskCondExecSysMsg">error</P>
+        <P Name="MultiTaskRateTransMsg">error</P>
+        <P Name="SingleTaskRateTransMsg">none</P>
+        <P Name="TasksWithSamePriorityMsg">warning</P>
+        <P Name="ExportedTasksRateTransMsg">none</P>
+        <P Name="SigSpecEnsureSampleTimeMsg">warning</P>
+        <P Name="CheckMatrixSingularityMsg">none</P>
+        <P Name="IntegerOverflowMsg">warning</P>
+        <P Name="Int32ToFloatConvMsg">warning</P>
+        <P Name="ParameterDowncastMsg">error</P>
+        <P Name="ParameterOverflowMsg">error</P>
+        <P Name="ParameterUnderflowMsg">none</P>
+        <P Name="ParameterPrecisionLossMsg">warning</P>
+        <P Name="ParamSuppressDoubleToSinglePrecisionLossMsg">off</P>
+        <P Name="ParamPrecisionLossAbsoluteDiffThreshold">0.0</P>
+        <P Name="ParamPrecisionLossRelativeDiffThreshold">0.0</P>
+        <P Name="ParamOverflowErrorThreshold">OneBit</P>
+        <P Name="ParameterTunabilityLossMsg">warning</P>
+        <P Name="FixptConstUnderflowMsg">none</P>
+        <P Name="FixptConstOverflowMsg">none</P>
+        <P Name="FixptConstPrecisionLossMsg">none</P>
+        <P Name="UnderSpecifiedDataTypeMsg">none</P>
+        <P Name="UnnecessaryDatatypeConvMsg">none</P>
+        <P Name="VectorMatrixConversionMsg">none</P>
+        <P Name="FcnCallInpInsideContextMsg">error</P>
+        <P Name="SignalLabelMismatchMsg">none</P>
+        <P Name="UnconnectedInputMsg">none</P>
+        <P Name="UnconnectedOutputMsg">none</P>
+        <P Name="UnconnectedLineMsg">none</P>
+        <P Name="UseOnlyExistingSharedCode">error</P>
+        <P Name="SFcnCompatibilityMsg">none</P>
+        <P Name="FrameProcessingCompatibilityMsg">error</P>
+        <P Name="UniqueDataStoreMsg">none</P>
+        <P Name="BusObjectLabelMismatch">warning</P>
+        <P Name="RootOutportRequireBusObject">warning</P>
+        <P Name="AssertControl">UseLocalSettings</P>
+        <P Name="AllowSymbolicDim">on</P>
+        <P Name="RowMajorDimensionSupport">off</P>
+        <P Name="ModelReferenceMultiInstanceNormalModeStructChecksumCheck">error</P>
+        <P Name="ModelReferenceVersionMismatchMessage">none</P>
+        <P Name="ModelReferenceIOMismatchMessage">none</P>
+        <P Name="UnknownTsInhSupMsg">warning</P>
+        <P Name="ModelReferenceDataLoggingMessage">warning</P>
+        <P Name="ModelReferenceNoExplicitFinalValueMsg">none</P>
+        <P Name="ModelReferenceSymbolNameMessage">warning</P>
+        <P Name="StateNameClashWarn">none</P>
+        <P Name="OperatingPointInterfaceChecksumMismatchMsg">warning</P>
+        <P Name="NonCurrentReleaseOperatingPointMsg">error</P>
+        <P Name="PregeneratedLibrarySubsystemCodeDiagnostic">warning</P>
+        <P Name="SubsystemReferenceDiagnosticForUnitTest">error</P>
+        <P Name="MatchCodeGenerationContextForUpdateDiagram">none</P>
+        <P Name="InitInArrayFormatMsg">warning</P>
+        <P Name="StrictBusMsg">ErrorLevel1</P>
+        <P Name="BusNameAdapt">WarnAndRepair</P>
+        <P Name="NonBusSignalsTreatedAsBus">none</P>
+        <P Name="SymbolicDimMinMaxWarning">warning</P>
+        <P Name="LossOfSymbolicDimsSimulationWarning">warning</P>
+        <P Name="LossOfSymbolicDimsCodeGenerationWarning">error</P>
+        <P Name="SymbolicDimsDataTypeCodeGenerationDiagnostic">error</P>
+        <P Name="BlockIODiagnostic">none</P>
+        <P Name="SFUnusedDataAndEventsDiag">warning</P>
+        <P Name="SFUnexpectedBacktrackingDiag">error</P>
+        <P Name="SFInvalidInputDataAccessInChartInitDiag">warning</P>
+        <P Name="SFNoUnconditionalDefaultTransitionDiag">error</P>
+        <P Name="SFTransitionOutsideNaturalParentDiag">warning</P>
+        <P Name="SFUnreachableExecutionPathDiag">warning</P>
+        <P Name="SFUndirectedBroadcastEventsDiag">warning</P>
+        <P Name="SFTransitionActionBeforeConditionDiag">warning</P>
+        <P Name="SFOutputUsedAsStateInMooreChartDiag">error</P>
+        <P Name="SFTemporalDelaySmallerThanSampleTimeDiag">warning</P>
+        <P Name="SFSelfTransitionDiag">warning</P>
+        <P Name="SFExecutionAtInitializationDiag">warning</P>
+        <P Name="IntegerSaturationMsg">warning</P>
+        <P Name="AllowedUnitSystems">all</P>
+        <P Name="UnitsInconsistencyMsg">warning</P>
+        <P Name="AllowAutomaticUnitConversions">on</P>
+        <P Name="RCSCRenamedMsg">warning</P>
+        <P Name="RCSCObservableMsg">warning</P>
+        <P Name="ForceCombineOutputUpdateInSim">off</P>
+        <P Name="UnitDatabase"/>
+        <P Name="UnderSpecifiedDimensionMsg">none</P>
+        <P Name="DebugExecutionForFMUViaOutOfProcess">off</P>
+        <P Name="ArithmeticOperatorsInVariantConditions">error</P>
+        <P Name="VariantConditionMismatch">none</P>
+        <P Name="InheritVATfromSVC">warning</P>
+        <P Name="VariantConfigNotUsedByTopModel">warning</P>
+        <P Name="ParamWriterValidationControl">UseLocalSettings</P>
+      </Object>
+      <Object ObjectID="6" Version="24.1.0" ClassName="Simulink.HardwareCC">
+        <P Name="DisabledProps" Class="double">[]</P>
+        <P Name="Description"/>
+        <P Name="Components" Class="double">[]</P>
+        <P Name="ProdBitPerChar">8</P>
+        <P Name="ProdBitPerShort">16</P>
+        <P Name="ProdBitPerInt">32</P>
+        <P Name="ProdBitPerLong">32</P>
+        <P Name="ProdBitPerLongLong">64</P>
+        <P Name="ProdBitPerFloat">32</P>
+        <P Name="ProdBitPerDouble">64</P>
+        <P Name="ProdBitPerPointer">64</P>
+        <P Name="ProdBitPerSizeT">64</P>
+        <P Name="ProdBitPerPtrDiffT">64</P>
+        <P Name="ProdLargestAtomicInteger">Char</P>
+        <P Name="ProdLargestAtomicFloat">Float</P>
+        <P Name="ProdIntDivRoundTo">Zero</P>
+        <P Name="ProdEndianess">LittleEndian</P>
+        <P Name="ProdWordSize">64</P>
+        <P Name="ProdShiftRightIntArith">on</P>
+        <P Name="ProdLongLongMode">off</P>
+        <P Name="ProdHWDeviceType">Intel-&gt;x86-64 (Windows64)</P>
+        <P Name="TargetBitPerChar">8</P>
+        <P Name="TargetBitPerShort">16</P>
+        <P Name="TargetBitPerInt">32</P>
+        <P Name="TargetBitPerLong">32</P>
+        <P Name="TargetBitPerLongLong">64</P>
+        <P Name="TargetBitPerFloat">32</P>
+        <P Name="TargetBitPerDouble">64</P>
+        <P Name="TargetBitPerPointer">32</P>
+        <P Name="TargetBitPerSizeT">32</P>
+        <P Name="TargetBitPerPtrDiffT">32</P>
+        <P Name="TargetLargestAtomicInteger">Char</P>
+        <P Name="TargetLargestAtomicFloat">None</P>
+        <P Name="TargetShiftRightIntArith">on</P>
+        <P Name="TargetLongLongMode">off</P>
+        <P Name="TargetIntDivRoundTo">Undefined</P>
+        <P Name="TargetEndianess">Unspecified</P>
+        <P Name="TargetWordSize">32</P>
+        <P Name="TargetPreprocMaxBitsSint">32</P>
+        <P Name="TargetPreprocMaxBitsUint">32</P>
+        <P Name="TargetHWDeviceType">Specified</P>
+        <P Name="TargetUnknown">off</P>
+        <P Name="ProdEqTarget">on</P>
+        <P Name="UseEmbeddedCoderFeatures">on</P>
+        <P Name="UseSimulinkCoderFeatures">on</P>
+        <P Name="HardwareBoardFeatureSet">EmbeddedCoderHSP</P>
+      </Object>
+      <Object ObjectID="7" Version="24.1.0" ClassName="Simulink.ModelReferenceCC">
+        <P Name="DisabledProps" Class="double">[]</P>
+        <P Name="Description"/>
+        <P Name="Components" Class="double">[]</P>
+        <P Name="UpdateModelReferenceTargets">IfOutOfDateOrStructuralChange</P>
+        <P Name="EnableRefExpFcnMdlSchedulingChecks">off</P>
+        <P Name="CheckModelReferenceTargetMessage">error</P>
+        <P Name="EnableParallelModelReferenceBuilds">off</P>
+        <P Name="ParallelModelReferenceErrorOnInvalidPool">on</P>
+        <P Name="ParallelModelReferenceMATLABWorkerInit">None</P>
+        <P Name="ModelReferenceNumInstancesAllowed">Multi</P>
+        <P Name="PropagateVarSize">Infer from blocks in model</P>
+        <P Name="ModelDependencies"/>
+        <P Name="ModelReferencePassRootInputsByReference">on</P>
+        <P Name="ModelReferenceMinAlgLoopOccurrences">off</P>
+        <P Name="PropagateSignalLabelsOutOfModel">on</P>
+        <P Name="SupportModelReferenceSimTargetCustomCode">off</P>
+        <P Name="UseModelRefSolver">off</P>
+      </Object>
+      <Object ObjectID="8" Version="24.1.0" ClassName="Simulink.SFSimCC">
+        <P Name="DisabledProps" Class="double">[]</P>
+        <P Name="Description"/>
+        <P Name="Components" Class="double">[]</P>
+        <P Name="SimCustomSourceCode"/>
+        <P Name="SimCustomHeaderCode"/>
+        <P Name="SimCustomInitializer"/>
+        <P Name="SimCustomTerminator"/>
+        <P Name="SimReservedNameArray" Class="double">[]</P>
+        <P Name="SimUserSources"/>
+        <P Name="SimUserIncludeDirs"/>
+        <P Name="SimUserLibraries"/>
+        <P Name="SimUserDefines"/>
+        <P Name="SimCustomCompilerFlags"/>
+        <P Name="SimCustomLinkerFlags"/>
+        <P Name="SFSimEcho">on</P>
+        <P Name="SimCtrlC">on</P>
+        <P Name="SimIntegrity">on</P>
+        <P Name="SimUseLocalCustomCode">on</P>
+        <P Name="SimParseCustomCode">on</P>
+        <P Name="SimAnalyzeCustomCode">off</P>
+        <P Name="SimDebugExecutionForCustomCode">off</P>
+        <P Name="SimGenImportedTypeDefs">off</P>
+        <P Name="ModelFunctionsGlobalVisibility">on</P>
+        <P Name="CompileTimeRecursionLimit">50</P>
+        <P Name="EnableRuntimeRecursion">on</P>
+        <P Name="EnableImplicitExpansion">on</P>
+        <P Name="MATLABDynamicMemAlloc">on</P>
+        <P Name="MATLABDynamicMemAllocThreshold">65536</P>
+        <P Name="UsePrecompiledLibraries">Prefer</P>
+        <P Name="LegacyBehaviorForPersistentVarInContinuousTime">off</P>
+        <P Name="CustomCodeFunctionArrayLayout" Class="double">[]</P>
+        <P Name="DefaultCustomCodeFunctionArrayLayout">NotSpecified</P>
+        <P Name="CustomCodeUndefinedFunction">FilterOut</P>
+        <P Name="CustomCodeGlobalsAsFunctionIO">off</P>
+        <P Name="DefaultCustomCodeDeterministicFunctions">None</P>
+        <P Name="CustomCodeDeterministicFunctions"/>
+        <P Name="SimHardwareAcceleration">generic</P>
+        <P Name="SimTargetLang">C</P>
+        <P Name="GPUAcceleration">off</P>
+        <P Name="SimGPUMallocThreshold">200</P>
+        <P Name="SimGPUStackLimitPerThread">1024</P>
+        <P Name="SimGPUErrorChecks">off</P>
+        <P Name="SimGPUCustomComputeCapability"/>
+        <P Name="SimGPUCompilerFlags"/>
+        <P Name="SimDLTargetLibrary">mkl-dnn</P>
+        <P Name="SimDLAutoTuning">on</P>
+      </Object>
+      <Object BackupClass="Simulink.RTWCC" ObjectID="9" Version="24.1.0" ClassName="Simulink.RTWCC">
+        <Array PropName="DisabledProps" Type="Cell" Dimension="1*18">
+          <Cell Class="char">DataTypeReplacement</Cell>
+          <Cell Class="char">IncludeHyperlinkInReport</Cell>
+          <Cell Class="char">GenerateTraceInfo</Cell>
+          <Cell Class="char">HalideCodeGeneration</Cell>
+          <Cell Class="char">GenerateTraceReport</Cell>
+          <Cell Class="char">GenerateTraceReportSl</Cell>
+          <Cell Class="char">GenerateTraceReportSf</Cell>
+          <Cell Class="char">GenerateTraceReportEml</Cell>
+          <Cell Class="char">PortableWordSizes</Cell>
+          <Cell Class="char">GenerateWebview</Cell>
+          <Cell Class="char">GenerateCodeMetricsReport</Cell>
+          <Cell Class="char">GenerateCodeReplacementReport</Cell>
+          <Cell Class="char">GenerateMissedCodeReplacementReport</Cell>
+          <Cell Class="char">GenerateErtSFunction</Cell>
+          <Cell Class="char">CreateSILPILBlock</Cell>
+          <Cell Class="char">CodeProfilingInstrumentation</Cell>
+          <Cell Class="char">CodeStackProfiling</Cell>
+          <Cell Class="char">EmbeddedCoderDictionary</Cell>
+        </Array>
+        <P Name="Description">Generic Real-Time Target</P>
+        <P Name="SystemTargetFile">grt.tlc</P>
+        <P Name="EmbeddedCoderDictionary"/>
+        <P Name="HardwareBoard">None</P>
+        <P Name="ShowCustomHardwareApp">off</P>
+        <P Name="ShowEmbeddedHardwareApp">off</P>
+        <P Name="TLCOptions"/>
+        <P Name="GenCodeOnly">off</P>
+        <P Name="MakeCommand">make_rtw</P>
+        <P Name="GenerateMakefile">on</P>
+        <P Name="PackageGeneratedCodeAndArtifacts">off</P>
+        <P Name="PackageName"/>
+        <P Name="TemplateMakefile">grt_default_tmf</P>
+        <P Name="PostCodeGenCommand"/>
+        <P Name="GenerateReport">off</P>
+        <P Name="RTWVerbose">on</P>
+        <P Name="RetainRTWFile">off</P>
+        <P Name="RTWBuildHooks" Class="double">[]</P>
+        <P Name="ProfileTLC">off</P>
+        <P Name="TLCDebug">off</P>
+        <P Name="TLCCoverage">off</P>
+        <P Name="TLCAssert">off</P>
+        <P Name="BuiltinFFTWCallback">off</P>
+        <P Name="RTWUseLocalCustomCode">on</P>
+        <P Name="RTWUseSimCustomCode">off</P>
+        <P Name="CustomSourceCode"/>
+        <P Name="CustomHeaderCode"/>
+        <P Name="CustomInclude"/>
+        <P Name="CustomSource"/>
+        <P Name="CustomLibrary"/>
+        <P Name="CustomDefine"/>
+        <P Name="CustomBLASCallback"/>
+        <P Name="CustomLAPACKCallback"/>
+        <P Name="CustomFFTCallback"/>
+        <P Name="CustomInitializer"/>
+        <P Name="CustomTerminator"/>
+        <P Name="Toolchain">Automatically locate an installed toolchain</P>
+        <P Name="BuildConfiguration">Faster Builds</P>
+        <P Name="CustomToolchainOptions" Class="double">[]</P>
+        <P Name="IncludeHyperlinkInReport">off</P>
+        <P Name="LaunchReport">off</P>
+        <P Name="PortableWordSizes">off</P>
+        <P Name="CreateSILPILBlock">None</P>
+        <P Name="CodeExecutionProfiling">off</P>
+        <P Name="CodeExecutionProfileVariable">executionProfile</P>
+        <P Name="CodeProfilingSaveOptions">SummaryOnly</P>
+        <P Name="CodeProfilingInstrumentation">off</P>
+        <P Name="CodeStackProfiling">off</P>
+        <P Name="CodeStackProfileVariable">stackProfile</P>
+        <P Name="SILPILDebugging">off</P>
+        <P Name="RemoveFixptWordSizeChecks">off</P>
+        <P Name="DataTypeReplacement">CoderTypedefs</P>
+        <P Name="CoderTypedefsCompatibility">off</P>
+        <P Name="TargetLang">C</P>
+        <P Name="GenerateGPUCode">None</P>
+        <P Name="HalideCodeGeneration">off</P>
+        <P Name="IncludeBusHierarchyInRTWFileBlockHierarchyMap">off</P>
+        <P Name="GenerateTraceInfo">off</P>
+        <P Name="GenerateTraceReport">off</P>
+        <P Name="GenerateTraceReportSl">off</P>
+        <P Name="GenerateTraceReportSf">off</P>
+        <P Name="GenerateTraceReportEml">off</P>
+        <P Name="GenerateWebview">off</P>
+        <P Name="GenerateCodeMetricsReport">off</P>
+        <P Name="GenerateCodeReplacementReport">off</P>
+        <P Name="GenerateMissedCodeReplacementReport">off</P>
+        <P Name="RTWCompilerOptimization">off</P>
+        <P Name="ObjectivePriorities" Class="double">[]</P>
+        <P Name="RTWCustomCompilerOptimizations"/>
+        <P Name="CheckMdlBeforeBuild">Off</P>
+        <P Name="SharedConstantsCachingThreshold">1024</P>
+        <P Name="GPUKernelNamePrefix"/>
+        <P Name="GPUDeviceID">-1</P>
+        <P Name="GPUMallocMode">discrete</P>
+        <P Name="GPUMallocThreshold">200</P>
+        <P Name="GPUEnableMemoryManager">off</P>
+        <P Name="GPUStackLimitPerThread">1024</P>
+        <P Name="GPUcuBLAS">on</P>
+        <P Name="GPUcuSOLVER">on</P>
+        <P Name="GPUcuFFT">on</P>
+        <P Name="GPUErrorChecks">off</P>
+        <P Name="GPUComputeCapability">5.0</P>
+        <P Name="GPUCustomComputeCapability"/>
+        <P Name="GPUCompilerFlags"/>
+        <P Name="GPUMaximumBlocksPerKernel">0</P>
+        <P Name="DLTargetLibrary">none</P>
+        <P Name="DLAutoTuning">on</P>
+        <P Name="DLDataType">fp32</P>
+        <P Name="DLArmComputeVersion">20.02.1</P>
+        <P Name="DLArmComputeArch">unspecified</P>
+        <P Name="DLLearnablesCompression">None</P>
+        <P Name="LargeConstantGeneration">KeepInSourceFiles</P>
+        <P Name="LargeConstantThreshold">131072</P>
+        <Array PropName="Components" Type="Handle" Dimension="1*2">
+          <Object ObjectID="10" Version="24.1.0" ClassName="Simulink.CodeAppCC">
+            <Array PropName="DisabledProps" Type="Cell" Dimension="1*29">
+              <Cell Class="char">IgnoreCustomStorageClasses</Cell>
+              <Cell Class="char">IgnoreTestpoints</Cell>
+              <Cell Class="char">BlockCommentType</Cell>
+              <Cell Class="char">InsertBlockDesc</Cell>
+              <Cell Class="char">InsertPolySpaceComments</Cell>
+              <Cell Class="char">SFDataObjDesc</Cell>
+              <Cell Class="char">MATLABFcnDesc</Cell>
+              <Cell Class="char">SimulinkDataObjDesc</Cell>
+              <Cell Class="char">DefineNamingRule</Cell>
+              <Cell Class="char">SignalNamingRule</Cell>
+              <Cell Class="char">ParamNamingRule</Cell>
+              <Cell Class="char">InternalIdentifier</Cell>
+              <Cell Class="char">InlinedPrmAccess</Cell>
+              <Cell Class="char">CustomSymbolStr</Cell>
+              <Cell Class="char">CustomSymbolStrGlobalVar</Cell>
+              <Cell Class="char">CustomSymbolStrType</Cell>
+              <Cell Class="char">CustomSymbolStrField</Cell>
+              <Cell Class="char">CustomSymbolStrFcn</Cell>
+              <Cell Class="char">CustomSymbolStrModelFcn</Cell>
+              <Cell Class="char">CustomSymbolStrFcnArg</Cell>
+              <Cell Class="char">CustomSymbolStrBlkIO</Cell>
+              <Cell Class="char">CustomSymbolStrTmpVar</Cell>
+              <Cell Class="char">CustomSymbolStrMacro</Cell>
+              <Cell Class="char">CustomSymbolStrUtil</Cell>
+              <Cell Class="char">CustomSymbolStrEmxType</Cell>
+              <Cell Class="char">CustomSymbolStrEmxFcn</Cell>
+              <Cell Class="char">CustomUserTokenString</Cell>
+              <Cell Class="char">ReqsInCode</Cell>
+              <Cell Class="char">AnnotationsInComments</Cell>
+            </Array>
+            <P Name="Description"/>
+            <P Name="Components" Class="double">[]</P>
+            <P Name="Comment"/>
+            <P Name="ForceParamTrailComments">off</P>
+            <P Name="GenerateComments">on</P>
+            <P Name="CommentStyle">Auto</P>
+            <P Name="IgnoreCustomStorageClasses">on</P>
+            <P Name="IgnoreTestpoints">off</P>
+            <P Name="MaxIdLength">31</P>
+            <P Name="PreserveName">off</P>
+            <P Name="PreserveNameWithParent">off</P>
+            <P Name="ShowEliminatedStatement">off</P>
+            <P Name="OperatorAnnotations">off</P>
+            <P Name="SimulinkDataObjDesc">off</P>
+            <P Name="SFDataObjDesc">off</P>
+            <P Name="MATLABFcnDesc">off</P>
+            <P Name="MangleLength">1</P>
+            <P Name="SharedChecksumLength">8</P>
+            <P Name="CustomSymbolStrGlobalVar">$R$N$M</P>
+            <P Name="CustomSymbolStrType">$N$R$M_T</P>
+            <P Name="CustomSymbolStrField">$N$M</P>
+            <P Name="CustomSymbolStrFcn">$R$N$M$F</P>
+            <P Name="CustomSymbolStrModelFcn">$R$N</P>
+            <P Name="CustomSymbolStrFcnArg">rt$I$N$M</P>
+            <P Name="CustomSymbolStrBlkIO">rtb_$N$M</P>
+            <P Name="CustomSymbolStrTmpVar">$N$M</P>
+            <P Name="CustomSymbolStrMacro">$R$N$M</P>
+            <P Name="CustomSymbolStrUtil">$N$C</P>
+            <P Name="CustomSymbolStrEmxType">emxArray_$M$N</P>
+            <P Name="CustomSymbolStrEmxFcn">emx$M$N</P>
+            <P Name="CustomUserTokenString"/>
+            <P Name="CustomCommentsFcn"/>
+            <P Name="DefineNamingRule">None</P>
+            <P Name="DefineNamingFcn"/>
+            <P Name="ParamNamingRule">None</P>
+            <P Name="ParamNamingFcn"/>
+            <P Name="SignalNamingRule">None</P>
+            <P Name="SignalNamingFcn"/>
+            <P Name="InsertBlockDesc">off</P>
+            <P Name="AnnotationsInComments">off</P>
+            <P Name="InsertPolySpaceComments">off</P>
+            <P Name="SimulinkBlockComments">on</P>
+            <P Name="BlockCommentType">BlockPathComment</P>
+            <P Name="StateflowObjectComments">off</P>
+            <P Name="MATLABSourceComments">off</P>
+            <P Name="EnableCustomComments">off</P>
+            <P Name="InternalIdentifierFile"/>
+            <P Name="InternalIdentifier">Shortened</P>
+            <P Name="InlinedPrmAccess">Literals</P>
+            <P Name="ReqsInCode">off</P>
+            <P Name="UseSimReservedNames">off</P>
+            <P Name="ReservedNameArray" Class="double">[]</P>
+            <P Name="EnumMemberNameClash">error</P>
+          </Object>
+          <Object BackupClass="Simulink.TargetCC" ObjectID="11" Version="24.1.0" ClassName="Simulink.GRTTargetCC">
+            <Array PropName="DisabledProps" Type="Cell" Dimension="1*19">
+              <Cell Class="char">IncludeMdlTerminateFcn</Cell>
+              <Cell Class="char">SuppressErrorStatus</Cell>
+              <Cell Class="char">ERTCustomFileBanners</Cell>
+              <Cell Class="char">GenerateSampleERTMain</Cell>
+              <Cell Class="char">ExistingSharedCode</Cell>
+              <Cell Class="char">GenerateTestInterfaces</Cell>
+              <Cell Class="char">ModelStepFunctionPrototypeControlCompliant</Cell>
+              <Cell Class="char">GenerateAllocFcn</Cell>
+              <Cell Class="char">PurelyIntegerCode</Cell>
+              <Cell Class="char">SupportComplex</Cell>
+              <Cell Class="char">SupportAbsoluteTime</Cell>
+              <Cell Class="char">SupportContinuousTime</Cell>
+              <Cell Class="char">SupportNonInlinedSFcns</Cell>
+              <Cell Class="char">ParenthesesLevel</Cell>
+              <Cell Class="char">ERTMultiwordTypeDef</Cell>
+              <Cell Class="char">MultiwordTypeDef</Cell>
+              <Cell Class="char">RemoveDisableFunc</Cell>
+              <Cell Class="char">RemoveResetFunc</Cell>
+              <Cell Class="char">PreserveStateflowLocalDataDimensions</Cell>
+            </Array>
+            <P Name="Description"/>
+            <P Name="Components" Class="double">[]</P>
+            <P Name="TargetFcnLib">ansi_tfl_table_tmw.mat</P>
+            <P Name="TargetLibSuffix"/>
+            <P Name="TargetPreCompLibLocation"/>
+            <P Name="GenFloatMathFcnCalls">NOT IN USE</P>
+            <P Name="TargetLangStandard">C99 (ISO)</P>
+            <P Name="CodeReplacementLibrary">None</P>
+            <P Name="UtilityFuncGeneration">Auto</P>
+            <P Name="MultiwordTypeDef">System defined</P>
+            <P Name="MultiwordLength">2048</P>
+            <P Name="DynamicStringBufferSize">256</P>
+            <P Name="GenerateFullHeader">on</P>
+            <P Name="InferredTypesCompatibility">off</P>
+            <P Name="ExistingSharedCode"/>
+            <P Name="GenerateSampleERTMain">off</P>
+            <P Name="GenerateTestInterfaces">off</P>
+            <P Name="ModelReferenceCompliant">on</P>
+            <P Name="ParMdlRefBuildCompliant">on</P>
+            <P Name="CompOptLevelCompliant">on</P>
+            <P Name="ConcurrentExecutionCompliant">on</P>
+            <P Name="IncludeMdlTerminateFcn">on</P>
+            <P Name="CombineOutputUpdateFcns">on</P>
+            <P Name="CombineSignalStateStructs">off</P>
+            <P Name="GroupInternalDataByFunction">off</P>
+            <P Name="SuppressErrorStatus">off</P>
+            <P Name="IncludeFileDelimiter">Auto</P>
+            <P Name="ERTCustomFileBanners">off</P>
+            <P Name="SupportAbsoluteTime">on</P>
+            <P Name="LogVarNameModifier">rt_</P>
+            <P Name="MatFileLogging">on</P>
+            <P Name="CodeInterfacePackaging">Nonreusable function</P>
+            <P Name="PurelyIntegerCode">off</P>
+            <P Name="SupportNonFinite">on</P>
+            <P Name="SupportComplex">on</P>
+            <P Name="SupportContinuousTime">on</P>
+            <P Name="SupportNonInlinedSFcns">on</P>
+            <P Name="RemoveDisableFunc">off</P>
+            <P Name="RemoveResetFunc">off</P>
+            <P Name="SupportVariableSizeSignals">off</P>
+            <P Name="ParenthesesLevel">Nominal</P>
+            <P Name="CastingMode">Nominal</P>
+            <P Name="MATLABClassNameForMDSCustomization">Simulink.SoftwareTarget.GRTCustomization</P>
+            <P Name="ModelStepFunctionPrototypeControlCompliant">off</P>
+            <P Name="CPPClassGenCompliant">on</P>
+            <P Name="AutosarCompliant">off</P>
+            <P Name="MDXCompliant">off</P>
+            <P Name="GRTInterface">off</P>
+            <P Name="GenerateAllocFcn">off</P>
+            <P Name="UseToolchainInfoCompliant">on</P>
+            <P Name="GenerateSharedConstants">on</P>
+            <P Name="CoderGroups" Class="double">[]</P>
+            <P Name="AccessMethods" Class="double">[]</P>
+            <P Name="LookupTableObjectStructAxisOrder">1,2,3,4,...</P>
+            <P Name="LUTObjectStructOrderExplicitValues">Size,Breakpoints,Table</P>
+            <P Name="LUTObjectStructOrderEvenSpacing">Size,Breakpoints,Table</P>
+            <P Name="ArrayLayout">Column-major</P>
+            <P Name="UnsupportedSFcnMsg">error</P>
+            <P Name="ERTHeaderFileRootName">$R$E</P>
+            <P Name="ERTSourceFileRootName">$R$E</P>
+            <P Name="ERTDataFileRootName">$R_data</P>
+            <Array PropName="InstructionSetExtensions" Type="Cell" Dimension="1*1">
+              <Cell Class="char">SSE2</Cell>
+            </Array>
+            <P Name="InstructionSetFMA">off</P>
+            <P Name="OptimizeReductions">off</P>
+            <P Name="HeaderGuardPrefix"/>
+            <P Name="LogToMDFFile">off</P>
+            <P Name="UseMalloc">off</P>
+            <P Name="ExtMode">off</P>
+            <P Name="ExtModeStaticAlloc">off</P>
+            <P Name="ExtModeTesting">off</P>
+            <P Name="ExtModeAutomaticAllocSize">on</P>
+            <P Name="ExtModeMaxTrigDuration">10</P>
+            <P Name="ExtModeStaticAllocSize">1000000</P>
+            <P Name="ExtModeTransport">0</P>
+            <P Name="ExtModeMexFile">ext_comm</P>
+            <P Name="ExtModeMexArgs"/>
+            <P Name="ExtModeIntrfLevel">Level1</P>
+            <P Name="RTWCAPISignals">off</P>
+            <P Name="RTWCAPIParams">off</P>
+            <P Name="RTWCAPIStates">off</P>
+            <P Name="RTWCAPIRootIO">off</P>
+            <P Name="GenerateASAP2">off</P>
+            <P Name="MultiInstanceErrorCode">Error</P>
+          </Object>
+        </Array>
+      </Object>
+      <Object ObjectID="12" Version="24.1.0" ClassName="SlCovCC.ConfigComp">
+        <P Name="DisabledProps" Class="double">[]</P>
+        <P Name="Description">Simulink Coverage Configuration Component</P>
+        <P Name="Components" Class="double">[]</P>
+        <P Name="Name">Simulink Coverage</P>
+        <P Name="CovEnable">off</P>
+        <P Name="CovScope">EntireSystem</P>
+        <P Name="CovIncludeTopModel">on</P>
+        <P Name="RecordCoverage">off</P>
+        <P Name="CovPath">/</P>
+        <P Name="CovSaveName">covdata</P>
+        <P Name="CovCompData"/>
+        <P Name="CovMetricSettings">dwe</P>
+        <P Name="CovFilter"/>
+        <P Name="CovHTMLOptions"/>
+        <P Name="CovNameIncrementing">off</P>
+        <P Name="CovForceBlockReductionOff">on</P>
+        <P Name="CovEnableCumulative">on</P>
+        <P Name="CovSaveCumulativeToWorkspaceVar">off</P>
+        <P Name="CovSaveSingleToWorkspaceVar">off</P>
+        <P Name="CovCumulativeVarName">covCumulativeData</P>
+        <P Name="CovCumulativeReport">off</P>
+        <P Name="CovSaveOutputData">on</P>
+        <P Name="CovOutputDir">slcov_output/$ModelName$</P>
+        <P Name="CovDataFileName">$ModelName$_cvdata</P>
+        <P Name="CovReportOnPause">on</P>
+        <P Name="CovModelRefEnable">off</P>
+        <P Name="CovModelRefExcluded"/>
+        <P Name="CovExternalEMLEnable">on</P>
+        <P Name="CovSFcnEnable">on</P>
+        <P Name="CovBoundaryAbsTol">1e-05</P>
+        <P Name="CovBoundaryRelTol">0.01</P>
+        <P Name="CovUseTimeInterval">off</P>
+        <P Name="CovStartTime">0</P>
+        <P Name="CovStopTime">0</P>
+        <P Name="CovMcdcMode">Masking</P>
+        <P Name="CovExcludeInactiveVariants">off</P>
+      </Object>
+    </Array>
+    <P Name="Name">Configuration</P>
+    <P Name="CurrentDlgPage">Solver</P>
+    <P Name="ConfigPrmDlgPosition">[ 71, 71, 900, 710 ]</P>
+    <P Name="ExtraOptions"/>
+  </Object>
+</ConfigSet>
+
+__MWOPC_PART_BEGIN__ /simulink/configSetInfo.xml
+<?xml version="1.0" encoding="utf-8"?>
+<ConfigSetInfo>
+  <ConfigSet PartName="/simulink/configSet0.xml" Active="true">Configuration</ConfigSet>
+</ConfigSetInfo>
+
+__MWOPC_PART_BEGIN__ /simulink/graphicalInterface.json
+{
+    "GraphicalInterface":{
+        "PreCompExecutionDomainType":"Unset",
+        "SimulinkSubDomainType":"Simulink",
+        "SolverName":"VariableStepAuto"
+    }
+}
+__MWOPC_PART_BEGIN__ /simulink/modelDictionary.xml
+<?xml version="1.0" encoding="UTF-8"?>
+<MF0 version="1.1" defaultPackage="slid" packageUris="http://schema.mathworks.com/mf0/slid/R2023a_20220628">
+  <System type="System" uuid="81c56de8-0934-41bf-bb87-826362da2a0f">
+    <Interface type="Interface" uuid="fbd3a3b1-8064-4368-9e7d-2af609238d54"/>
+  </System>
+</MF0>
+__MWOPC_PART_BEGIN__ /simulink/plugins/sysarch_app_plugin.xml
+<?xml version="1.0" encoding="utf-8"?>
+<sysarch_app_plugin>
+  <P Name="SystemPortSchema">{&quot;entries&quot;:[{&quot;content&quot;:{&quot;headerSize&quot;:26,&quot;margin&quot;:15,&quot;minimumSpacing&quot;:25,&quot;sides&quot;:[{&quot;content&quot;:{},&quot;type&quot;:&quot;ConnectorPlacement.EquallySpacedRectSide&quot;,&quot;uuid&quot;:&quot;ef33723e-24ba-47c6-b183-767231aed4b7&quot;}]},&quot;type&quot;:&quot;ConnectorPlacement.EquallySpacedConnector&quot;,&quot;uuid&quot;:&quot;c4eec0bd-cb98-4bf2-b2b7-c30f086ab483&quot;}],&quot;packageUris&quot;:[&quot;http://schema.mathworks.com/mf0/Connector/R2020b&quot;],&quot;version&quot;:&quot;1.0&quot;}</P>
+</sysarch_app_plugin>
+
+__MWOPC_PART_BEGIN__ /simulink/ScheduleCore.xml
+<?xml version="1.0" encoding="UTF-8"?>
+<sltp_graph version="1.1" packageUris="http://schema.mathworks.com/mf0/sltp_mm/R2024b_202402211119">
+  <sltp.mm.core.Context type="sltp.mm.core.Context" uuid="d1aea6b9-a28b-4504-8f90-e2d95f6d83fb">
+    <priorityDirection>HighNumberLast</priorityDirection>
+    <defaultEventBehavior type="sltp.mm.core.EventBehavior" uuid="ddda92a8-8112-43df-ba6f-31571865473c"/>
+    <editorState type="sltp.mm.core.EditorState" uuid="29b017c2-dee9-4c2e-a1cc-aa2e28b7065c">
+      <isSynchronized>true</isSynchronized>
+      <panelState type="sltp.mm.core.EditorPanelState" uuid="d6056699-4edc-40b2-bfc4-71f1d86ddd0e"/>
+    </editorState>
+    <rootTask type="sltp.mm.core.Task" uuid="3c1c86c1-264f-4944-af3a-d5f8346c9fd2">
+      <context type="sltp.mm.core.Context" uuid="d1aea6b9-a28b-4504-8f90-e2d95f6d83fb"/>
+      <explicit>false</explicit>
+      <name>Default</name>
+      <priority>-2147483648</priority>
+      <subgraph type="sltp.mm.core.Graph" uuid="9de14fe5-4894-4357-b6e6-28d2748c2e1c">
+        <tasks type="sltp.mm.core.Task" uuid="26c3233a-d753-4740-bb7c-a15dbfbe878a">
+          <baseTask>true</baseTask>
+          <context type="sltp.mm.core.Context" uuid="d1aea6b9-a28b-4504-8f90-e2d95f6d83fb"/>
+          <explicit>false</explicit>
+          <id>1</id>
+          <isTimed>true</isTimed>
+          <name>Cont</name>
+          <priority>40</priority>
+          <rates type="sltp.mm.core.Rate" uuid="920f8259-267c-4f01-b00b-a7eb4aa27dff">
+            <annotation>Cont</annotation>
+            <color>255</color>
+            <hasBlocks>true</hasBlocks>
+            <identifier>Continuous00</identifier>
+            <rateIndex>0</rateIndex>
+            <rateSpec type="sltp.mm.core.RateSpec">
+              <period>0.0</period>
+            </rateSpec>
+            <sti>0</sti>
+          </rates>
+          <rates type="sltp.mm.core.Rate" uuid="d5043cbf-a103-432b-8766-487e202c6971">
+            <annotation>FiM</annotation>
+            <color>2105376255</color>
+            <hasBlocks>true</hasBlocks>
+            <rateIndex>1</rateIndex>
+            <rateSpec type="sltp.mm.core.RateSpec">
+              <offset>1.0</offset>
+              <period>0.0</period>
+            </rateSpec>
+            <sti>1</sti>
+          </rates>
+        </tasks>
+      </subgraph>
+    </rootTask>
+  </sltp.mm.core.Context>
+</sltp_graph>
+__MWOPC_PART_BEGIN__ /simulink/ScheduleEditor.xml
+<?xml version="1.0" encoding="UTF-8"?>
+<sltp_editor version="1.1" packageUris="http://schema.mathworks.com/mf0/DiagramEditor/R2019a_20181107 http://schema.mathworks.com/mf0/SltpSyntax/R2024b_202402211148">
+  <sltp.mm.syntax.Context type="sltp.mm.syntax.Context" uuid="ec9a3f04-2b35-411a-a39b-d4a9b33fd887">
+    <rootGraph type="sltp.mm.syntax.Graph" uuid="6c045825-01e1-43b8-a9a1-b58e6122ea4c">
+      <children type="sltp.mm.syntax.Node" uuid="415e9374-08ad-4c0f-bcfd-d42c5d461d5d">
+        <priority>40</priority>
+        <rates type="sltp.mm.syntax.RateData">
+          <color>#000000</color>
+          <hasBlocks>true</hasBlocks>
+          <rate>0</rate>
+          <title>Cont</title>
+        </rates>
+        <rates type="sltp.mm.syntax.RateData">
+          <color>#7d7d7d</color>
+          <hasBlocks>true</hasBlocks>
+          <rate>[0, 1]</rate>
+          <title>FiM</title>
+        </rates>
+        <title>Cont</title>
+        <type>base</type>
+        <diagramElement type="diagram.editor.model.Entity" uuid="cea15b5b-c1a8-4792-b92b-cf5b235f2fc7"/>
+        <subgraph type="sltp.mm.syntax.Graph" uuid="c27a76f9-cc9e-43e3-bbe6-7e52643356ab">
+          <title>Cont</title>
+          <diagramElement type="diagram.editor.model.Diagram" uuid="0b73e89b-ea17-40e9-ba81-864d3f65fb35"/>
+        </subgraph>
+      </children>
+      <title>Default</title>
+      <diagramElement type="diagram.editor.model.Diagram" uuid="ee8df477-5dc2-4be0-ba14-8f5726b1746b"/>
+    </rootGraph>
+  </sltp.mm.syntax.Context>
+  <diagram.editor.model.Diagram type="diagram.editor.model.Diagram" uuid="ee8df477-5dc2-4be0-ba14-8f5726b1746b">
+    <entities type="diagram.editor.model.Entity" uuid="cea15b5b-c1a8-4792-b92b-cf5b235f2fc7">
+      <position>0,0</position>
+      <size>0,0,0,0</size>
+      <syntaxElement type="sltp.mm.syntax.Node" uuid="415e9374-08ad-4c0f-bcfd-d42c5d461d5d"/>
+      <title>Cont</title>
+      <type>base</type>
+      <subDiagram type="diagram.editor.model.Diagram" uuid="0b73e89b-ea17-40e9-ba81-864d3f65fb35">
+        <position>0,0</position>
+        <syntaxElement type="sltp.mm.syntax.Graph" uuid="c27a76f9-cc9e-43e3-bbe6-7e52643356ab"/>
+        <title>Cont</title>
+        <type>graph.Graph</type>
+      </subDiagram>
+    </entities>
+    <syntaxElement type="sltp.mm.syntax.Graph" uuid="6c045825-01e1-43b8-a9a1-b58e6122ea4c"/>
+    <title>Default</title>
+    <type>graph.Graph</type>
+  </diagram.editor.model.Diagram>
+</sltp_editor>
+__MWOPC_PART_BEGIN__ /simulink/stateflow/_rels/machine.xml.rels
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
+  <Relationship Id="chart_28" Target="chart_28.xml" Type="http://schemas.mathworks.com/simulinkModel/2018/relationships/stateflowMachine"/>
+  <Relationship Id="chart_38" Target="chart_38.xml" Type="http://schemas.mathworks.com/simulinkModel/2018/relationships/stateflowMachine"/>
+  <Relationship Id="chart_48" Target="chart_48.xml" Type="http://schemas.mathworks.com/simulinkModel/2018/relationships/stateflowMachine"/>
+  <Relationship Id="chart_58" Target="chart_58.xml" Type="http://schemas.mathworks.com/simulinkModel/2018/relationships/stateflowMachine"/>
+  <Relationship Id="chart_70" Target="chart_70.xml" Type="http://schemas.mathworks.com/simulinkModel/2018/relationships/stateflowMachine"/>
+  <Relationship Id="chart_76" Target="chart_76.xml" Type="http://schemas.mathworks.com/simulinkModel/2018/relationships/stateflowMachine"/>
+</Relationships>
+
+__MWOPC_PART_BEGIN__ /simulink/stateflow/chart_28.xml
+<?xml version="1.0" encoding="utf-8"?>
+<chart id="28">
+  <P Name="name">Subsystem/MATLAB Function1</P>
+  <P Name="windowPosition">[422 539.941 189 413]</P>
+  <P Name="viewLimits">[0 156.75 0 153.75]</P>
+  <P Name="screen">[1 1 3600 1200 1.180555555555556]</P>
+  <P Name="viewObj">28</P>
+  <P Name="ssIdHighWaterMark">10</P>
+  <P Name="decomposition">CLUSTER_CHART</P>
+  <P Name="type">EML_CHART</P>
+  <P Name="chartFileNumber">1</P>
+  <P Name="disableImplicitCasting">1</P>
+  <eml>
+    <P Name="name">yaw_dynamics</P>
+  </eml>
+  <Children>
+    <state SSID="1">
+      <P Name="labelString">eML_blk_kernel()</P>
+      <P Name="position">[18 64.5 118 66]</P>
+      <P Name="fontSize">12</P>
+      <P Name="superState">SUBCHART</P>
+      <P Name="subviewer">28</P>
+      <P Name="type">FUNC_STATE</P>
+      <P Name="decomposition">CLUSTER_STATE</P>
+      <eml>
+        <P Name="isEML">1</P>
+        <P Name="script">function dx_z_dt = yaw_dynamics(t, x_z, params_vec, tau_z)
+% yaw_dynamics.m
+%
+% 1-DOF yaw dynamic model for Ball Segway.
+%
+% State x_z = [theta_z ; theta_z_dot]
+% params_vec = 20×1 numeric parameter vector (from init_params)
+% Output dx_z_dt = state derivative (2×1)
+
+%% ---------------------------------------------------------
+% Unpack Parameters From Vector
+%% ---------------------------------------------------------
+
+mk  = params_vec(1);     %#ok&lt;NASGU&gt; (not used)
+Ik  = params_vec(2);
+ma  = params_vec(3);     %#ok&lt;NASGU&gt;
+Ix  = params_vec(4);     %#ok&lt;NASGU&gt;
+Iy  = params_vec(5);
+Iz  = params_vec(6);
+l   = params_vec(7);     %#ok&lt;NASGU&gt;
+alpha_rad = params_vec(8);
+rk  = params_vec(9);
+rw  = params_vec(10);
+bx  = params_vec(11);    %#ok&lt;NASGU&gt;
+dx  = params_vec(12);    %#ok&lt;NASGU&gt;
+by  = params_vec(13);    %#ok&lt;NASGU&gt;
+dy  = params_vec(14);    %#ok&lt;NASGU&gt;
+bry = params_vec(15);    %#ok&lt;NASGU&gt;
+dry = params_vec(16);    %#ok&lt;NASGU&gt;
+brx = params_vec(17);    %#ok&lt;NASGU&gt;
+drx = params_vec(18);    %#ok&lt;NASGU&gt;
+g   = params_vec(19);    %#ok&lt;NASGU&gt;
+k_motor = params_vec(20); %#ok&lt;NASGU&gt;
+
+% Keep notation same as your original code
+I_k_param = Ik;
+I_w = Iy;
+
+
+%% ---------------------------------------------------------
+% Extract States
+%% ---------------------------------------------------------
+
+theta_z     = x_z(1);
+theta_z_dot = x_z(2);
+
+
+%% ---------------------------------------------------------
+% Yaw Dynamics (Eq. 13)
+%% ---------------------------------------------------------
+
+num = I_k_param * (rk / rw) * tau_z;
+
+den = I_k_param * Iz + ...
+      3 * (I_k_param + Iz) * I_w * (rk / rw)^2 * sin(alpha_rad)^2;
+
+theta_z_ddot = num / den;
+
+
+%% ---------------------------------------------------------
+% Return Derivative
+%% ---------------------------------------------------------
+
+dx_z_dt = [ theta_z_dot ;
+            theta_z_ddot ];
+
+end
+</P>
+      </eml>
+    </state>
+    <data SSID="4" name="t">
+      <P Name="scope">INPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+        </type>
+        <P Name="complexity">SF_COMPLEX_INHERITED</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <data SSID="5" name="dx_z_dt">
+      <P Name="scope">OUTPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+        </type>
+        <P Name="complexity">SF_COMPLEX_INHERITED</P>
+        <P Name="frame">SF_FRAME_NO</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <data SSID="6" name="x_z">
+      <P Name="scope">INPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+          <P Name="isSigned">1</P>
+          <P Name="wordLength">16</P>
+        </type>
+        <P Name="complexity">SF_COMPLEX_INHERITED</P>
+        <P Name="frame">SF_FRAME_INHERITED</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <data SSID="10" name="params_vec">
+      <P Name="scope">INPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+          <P Name="isSigned">1</P>
+          <P Name="wordLength">16</P>
+        </type>
+        <P Name="complexity">SF_COMPLEX_INHERITED</P>
+        <P Name="frame">SF_FRAME_INHERITED</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <data SSID="8" name="tau_z">
+      <P Name="scope">INPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+          <P Name="isSigned">1</P>
+          <P Name="wordLength">16</P>
+        </type>
+        <P Name="complexity">SF_COMPLEX_INHERITED</P>
+        <P Name="frame">SF_FRAME_INHERITED</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <transition SSID="2">
+      <P Name="labelString">{eML_blk_kernel();}</P>
+      <P Name="labelPosition">[28.125 13.875 102.544 14.964]</P>
+      <P Name="fontSize">12</P>
+      <src>
+        <P Name="intersection">[0 0 1 0 23.5747 14.625 0 0]</P>
+      </src>
+      <dst>
+        <P Name="SSID">3</P>
+        <P Name="intersection">[1 0 -1 0 23.5747 42.5747 0 0]</P>
+      </dst>
+      <P Name="midPoint">[23.5747 24.9468]</P>
+      <P Name="dataLimits">[21.175 25.975 14.625 42.575]</P>
+      <P Name="subviewer">28</P>
+      <P Name="drawStyle">SMART</P>
+      <slide>
+        <P Name="sticky">BOTH_STICK</P>
+      </slide>
+      <P Name="executionOrder">1</P>
+    </transition>
+    <junction SSID="3">
+      <P Name="position">[23.5747 49.5747 7]</P>
+      <P Name="subviewer">28</P>
+      <P Name="type">CONNECTIVE_JUNCTION</P>
+    </junction>
+  </Children>
+</chart>
+
+__MWOPC_PART_BEGIN__ /simulink/stateflow/chart_38.xml
+<?xml version="1.0" encoding="utf-8"?>
+<chart id="38">
+  <P Name="name">Subsystem/MATLAB Function</P>
+  <P Name="windowPosition">[422 539.941 189 413]</P>
+  <P Name="viewLimits">[0 156.75 0 153.75]</P>
+  <P Name="screen">[1 1 3600 1200 1.180555555555556]</P>
+  <P Name="viewObj">38</P>
+  <P Name="ssIdHighWaterMark">10</P>
+  <P Name="decomposition">CLUSTER_CHART</P>
+  <P Name="type">EML_CHART</P>
+  <P Name="chartFileNumber">2</P>
+  <P Name="disableImplicitCasting">1</P>
+  <eml>
+    <P Name="name">pitch_dynamics</P>
+  </eml>
+  <Children>
+    <state SSID="1">
+      <P Name="labelString">eML_blk_kernel()</P>
+      <P Name="position">[18 64.5 118 66]</P>
+      <P Name="fontSize">12</P>
+      <P Name="superState">SUBCHART</P>
+      <P Name="subviewer">38</P>
+      <P Name="type">FUNC_STATE</P>
+      <P Name="decomposition">CLUSTER_STATE</P>
+      <eml>
+        <P Name="isEML">1</P>
+        <P Name="script">function dx_p_dt = pitch_dynamics(t, x_p, params_vec, tau_y)
+% pitch_dynamics.m
+%
+% 2-DOF dynamic model in the X–Z plane (pitch plane).
+%
+% State x_p = [x_k ; theta_y ; x_k_dot ; theta_y_dot]
+% params_vec = 20×1 vector from init_params()
+% Output dx_p_dt = state derivative (4×1)
+
+%% ---------------------------------------------------------
+% Unpack Parameters from Vector
+%% ---------------------------------------------------------
+
+mk  = params_vec(1);     % ball mass
+Ik  = params_vec(2);     % ball inertia
+ma  = params_vec(3);     % body mass
+Ix  = params_vec(4);     % inertia about x
+Iy  = params_vec(5);     % inertia about y
+Iz  = params_vec(6);     % inertia about z
+l   = params_vec(7);     % COM height
+alpha_rad = params_vec(8); % zenith angle
+rk  = params_vec(9);     % ball radius
+rw  = params_vec(10);    % omniwheel radius
+bx  = params_vec(11);
+dx  = params_vec(12);
+by  = params_vec(13);
+dy  = params_vec(14);
+bry = params_vec(15);
+dry = params_vec(16);
+brx = params_vec(17);
+drx = params_vec(18);
+g   = params_vec(19);    % gravity
+k_motor = params_vec(20);
+
+% Keep original notation
+I_k_param = Ik;
+I_w = Iy;    % consistent with roll dynamics formulation
+
+
+%% ---------------------------------------------------------
+% Extract State Variables
+%% ---------------------------------------------------------
+
+x_k         = x_p(1);
+theta_y     = x_p(2);
+x_k_dot     = x_p(3);
+theta_y_dot = x_p(4);
+
+q_y_dot = [x_k_dot ; theta_y_dot];
+
+
+%% ---------------------------------------------------------
+% Mass Matrix M(q)   (Eq. 8)
+%% ---------------------------------------------------------
+
+M11 = mk + (I_k_param / rk^2) + ma + ...
+      (3*I_w*cos(alpha_rad)^2) / (2*rw^2);
+
+M12 =   ma*l*cos(theta_y) ...
+      - (3*I_w*cos(alpha_rad)^2)/(2*rw^2) * rk;
+
+M21 = M12;
+
+M22 = ma*l^2 + ...
+      (3*I_w*rk^2*cos(alpha_rad)^2)/(2*rw^2) + Iy;
+
+M_y = [M11 M12; M21 M22];
+
+
+%% ---------------------------------------------------------
+% Coriolis–Centrifugal Vector
+%% ---------------------------------------------------------
+
+C_y = [ 0                            -ma*l*theta_y_dot*sin(theta_y);
+        0                             0 ];
+
+
+%% ---------------------------------------------------------
+% Gravity Vector
+%% ---------------------------------------------------------
+
+G_y = [0;
+       -ma*g*l*sin(theta_y)];
+
+
+%% ---------------------------------------------------------
+% Friction Vector (ignored)
+%% ---------------------------------------------------------
+
+D_y = [0; 0];
+
+
+%% ---------------------------------------------------------
+% Input Torque Vector
+%% ---------------------------------------------------------
+
+Q_y = [ -(1/rw) * tau_y ;
+         (rk/rw) * tau_y ];
+
+
+%% ---------------------------------------------------------
+% Solve q¨ = M⁻¹ (Q – C q̇ – D – G)
+%% ---------------------------------------------------------
+
+q_y_ddot = M_y \ (Q_y - C_y*q_y_dot - D_y - G_y);
+
+
+%% ---------------------------------------------------------
+% Output State Derivatives
+%% ---------------------------------------------------------
+
+dx_p_dt = [ x_k_dot ;
+            theta_y_dot ;
+            q_y_ddot(1) ;
+            q_y_ddot(2) ];
+
+end
+</P>
+      </eml>
+    </state>
+    <data SSID="4" name="t">
+      <P Name="scope">INPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+        </type>
+        <P Name="complexity">SF_COMPLEX_INHERITED</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <data SSID="5" name="dx_p_dt">
+      <P Name="scope">OUTPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+        </type>
+        <P Name="complexity">SF_COMPLEX_INHERITED</P>
+        <P Name="frame">SF_FRAME_NO</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <data SSID="6" name="x_p">
+      <P Name="scope">INPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+          <P Name="isSigned">1</P>
+          <P Name="wordLength">16</P>
+        </type>
+        <P Name="complexity">SF_COMPLEX_INHERITED</P>
+        <P Name="frame">SF_FRAME_INHERITED</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <data SSID="10" name="params_vec">
+      <P Name="scope">INPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+          <P Name="isSigned">1</P>
+          <P Name="wordLength">16</P>
+        </type>
+        <P Name="complexity">SF_COMPLEX_INHERITED</P>
+        <P Name="frame">SF_FRAME_INHERITED</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <data SSID="8" name="tau_y">
+      <P Name="scope">INPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+          <P Name="isSigned">1</P>
+          <P Name="wordLength">16</P>
+        </type>
+        <P Name="complexity">SF_COMPLEX_INHERITED</P>
+        <P Name="frame">SF_FRAME_INHERITED</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <transition SSID="2">
+      <P Name="labelString">{eML_blk_kernel();}</P>
+      <P Name="labelPosition">[28.125 13.875 102.544 14.964]</P>
+      <P Name="fontSize">12</P>
+      <src>
+        <P Name="intersection">[0 0 1 0 23.5747 14.625 0 0]</P>
+      </src>
+      <dst>
+        <P Name="SSID">3</P>
+        <P Name="intersection">[1 0 -1 0 23.5747 42.5747 0 0]</P>
+      </dst>
+      <P Name="midPoint">[23.5747 24.9468]</P>
+      <P Name="dataLimits">[21.175 25.975 14.625 42.575]</P>
+      <P Name="subviewer">38</P>
+      <P Name="drawStyle">SMART</P>
+      <slide>
+        <P Name="sticky">BOTH_STICK</P>
+      </slide>
+      <P Name="executionOrder">1</P>
+    </transition>
+    <junction SSID="3">
+      <P Name="position">[23.5747 49.5747 7]</P>
+      <P Name="subviewer">38</P>
+      <P Name="type">CONNECTIVE_JUNCTION</P>
+    </junction>
+  </Children>
+</chart>
+
+__MWOPC_PART_BEGIN__ /simulink/stateflow/chart_48.xml
+<?xml version="1.0" encoding="utf-8"?>
+<chart id="48">
+  <P Name="name">Subsystem/MATLAB Function2</P>
+  <P Name="windowPosition">[422 539.941 189 413]</P>
+  <P Name="viewLimits">[0 156.75 0 153.75]</P>
+  <P Name="screen">[1 1 3600 1200 1.180555555555556]</P>
+  <P Name="viewObj">48</P>
+  <P Name="visible">1</P>
+  <subviewS/>
+  <P Name="ssIdHighWaterMark">10</P>
+  <P Name="decomposition">CLUSTER_CHART</P>
+  <P Name="type">EML_CHART</P>
+  <P Name="chartFileNumber">3</P>
+  <P Name="disableImplicitCasting">1</P>
+  <eml>
+    <P Name="name">roll_dynamics</P>
+  </eml>
+  <Children>
+    <state SSID="1">
+      <P Name="labelString">eML_blk_kernel()</P>
+      <P Name="position">[18 64.5 118 66]</P>
+      <P Name="fontSize">12</P>
+      <P Name="superState">SUBCHART</P>
+      <P Name="subviewer">48</P>
+      <P Name="type">FUNC_STATE</P>
+      <P Name="decomposition">CLUSTER_STATE</P>
+      <eml>
+        <P Name="isEML">1</P>
+        <P Name="script">function dx_r_dt = roll_dynamics(t, x_r, params_vec, tau_x)
+% roll_dynamics.m
+%
+% State vector x_r = [y_k, theta_x, y_k_dot, theta_x_dot]&apos;
+
+%% 1. Unpack State
+y_k         = x_r(1);
+theta_x     = x_r(2);
+y_k_dot     = x_r(3);
+theta_x_dot = x_r(4);
+q_x_dot     = [y_k_dot; theta_x_dot];
+
+%% 2. Unpack parameters from vector
+mk  = params_vec(1);
+Ik  = params_vec(2);
+ma  = params_vec(3);
+Ix  = params_vec(4);
+Iy  = params_vec(5);
+Iz  = params_vec(6);
+l   = params_vec(7);
+alpha_rad = params_vec(8);
+rk  = params_vec(9);
+rw  = params_vec(10);
+bx  = params_vec(11);
+dx  = params_vec(12);
+by  = params_vec(13);   % USED
+dy  = params_vec(14);   % USED
+bry = params_vec(15);
+dry = params_vec(16);
+brx = params_vec(17);   % USED
+drx = params_vec(18);   % USED
+g   = params_vec(19);
+k_motor = params_vec(20);
+
+%% 3. Dynamics Matrices
+
+% Mass Matrix
+M11 = mk + (Ik / rk^2) + ma + (3*Iy*cos(alpha_rad)^2)/(2*rw^2);
+M12 = (3*Iy*cos(alpha_rad)^2)/(2*rw^2)*rk - ma*l*cos(theta_x);
+M21 = M12;
+M22 = ma*l^2 + (3*Iy*rk^2*cos(alpha_rad)^2)/(2*rw^2) + Ix;
+M_x = [M11 M12; M21 M22];
+
+% Coriolis Matrix
+C_x = [ 0                     ma*l*theta_x_dot*sin(theta_x);
+        0                     0 ];
+
+% Gravity Vector
+G_x = [ 0 ;
+       -ma*g*l*sin(theta_x) ];
+
+%% 4. Friction / Damping Vector (NEW)
+% D(q̇) = [by*y_k_dot + dy*sign(y_k_dot) ;
+%         brx*theta_x_dot + drx*sign(theta_x_dot)]
+
+D1 = by * y_k_dot     + dy  * sign(y_k_dot);
+D2 = brx * theta_x_dot + drx * sign(theta_x_dot);
+D_x = [D1 ; D2];
+
+%% 5. Control torque vector
+Q_x = [ (1/rw)*tau_x ;
+         (rk/rw)*tau_x ];
+
+%% 6. Compute accelerations
+q_x_ddot = M_x \ (Q_x - C_x*q_x_dot - D_x - G_x);
+
+%% 7. Output derivative
+dx_r_dt = [
+    y_k_dot ;
+    theta_x_dot ;
+    q_x_ddot(1) ;
+    q_x_ddot(2)
+];
+
+end
+</P>
+      </eml>
+    </state>
+    <data SSID="4" name="t">
+      <P Name="scope">INPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+        </type>
+        <P Name="complexity">SF_COMPLEX_INHERITED</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <data SSID="5" name="dx_r_dt">
+      <P Name="scope">OUTPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+        </type>
+        <P Name="complexity">SF_COMPLEX_INHERITED</P>
+        <P Name="frame">SF_FRAME_NO</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <data SSID="6" name="x_r">
+      <P Name="scope">INPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+          <P Name="isSigned">1</P>
+          <P Name="wordLength">16</P>
+        </type>
+        <P Name="complexity">SF_COMPLEX_INHERITED</P>
+        <P Name="frame">SF_FRAME_INHERITED</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <data SSID="10" name="params_vec">
+      <P Name="scope">INPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+          <P Name="isSigned">1</P>
+          <P Name="wordLength">16</P>
+        </type>
+        <P Name="complexity">SF_COMPLEX_INHERITED</P>
+        <P Name="frame">SF_FRAME_INHERITED</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <data SSID="8" name="tau_x">
+      <P Name="scope">INPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+          <P Name="isSigned">1</P>
+          <P Name="wordLength">16</P>
+        </type>
+        <P Name="complexity">SF_COMPLEX_INHERITED</P>
+        <P Name="frame">SF_FRAME_INHERITED</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <transition SSID="2">
+      <P Name="labelString">{eML_blk_kernel();}</P>
+      <P Name="labelPosition">[28.125 13.875 102.544 14.964]</P>
+      <P Name="fontSize">12</P>
+      <src>
+        <P Name="intersection">[0 0 1 0 23.5747 14.625 0 0]</P>
+      </src>
+      <dst>
+        <P Name="SSID">3</P>
+        <P Name="intersection">[1 0 -1 0 23.5747 42.5747 0 0]</P>
+      </dst>
+      <P Name="midPoint">[23.5747 24.9468]</P>
+      <P Name="dataLimits">[21.175 25.975 14.625 42.575]</P>
+      <P Name="subviewer">48</P>
+      <P Name="drawStyle">SMART</P>
+      <slide>
+        <P Name="sticky">BOTH_STICK</P>
+      </slide>
+      <P Name="executionOrder">1</P>
+    </transition>
+    <junction SSID="3">
+      <P Name="position">[23.5747 49.5747 7]</P>
+      <P Name="subviewer">48</P>
+      <P Name="type">CONNECTIVE_JUNCTION</P>
+    </junction>
+  </Children>
+</chart>
+
+__MWOPC_PART_BEGIN__ /simulink/stateflow/chart_58.xml
+<?xml version="1.0" encoding="utf-8"?>
+<chart id="58">
+  <P Name="name">MATLAB Function1</P>
+  <P Name="windowPosition">[422 539.941 189 413]</P>
+  <P Name="viewLimits">[0 156.75 0 153.75]</P>
+  <P Name="screen">[1 1 3600 1200 1.180555555555556]</P>
+  <P Name="viewObj">58</P>
+  <P Name="visible">1</P>
+  <subviewS/>
+  <P Name="ssIdHighWaterMark">26</P>
+  <P Name="decomposition">CLUSTER_CHART</P>
+  <P Name="type">EML_CHART</P>
+  <P Name="chartFileNumber">4</P>
+  <P Name="disableImplicitCasting">1</P>
+  <eml>
+    <P Name="name">LQR_Block</P>
+  </eml>
+  <Children>
+    <state SSID="1">
+      <P Name="labelString">eML_blk_kernel()</P>
+      <P Name="position">[18 64.5 118 66]</P>
+      <P Name="fontSize">12</P>
+      <P Name="superState">SUBCHART</P>
+      <P Name="subviewer">58</P>
+      <P Name="type">FUNC_STATE</P>
+      <P Name="decomposition">CLUSTER_STATE</P>
+      <eml>
+        <P Name="isEML">1</P>
+        <P Name="script">function [vy, vx] = LQR_Block(x5, th_dot, th, ball_dot, ball_pos)
+%(x5, th, th_dot, )
+% ========================================================================
+%   REAL-TIME LQR CONTROLLER BLOCK
+%   Applies pre-calculated gains Kr and Kp to the system states.
+%
+%   This block EXPECTS &apos;Kr&apos; and &apos;Kp&apos; to be passed in as parameters.
+% ========================================================================
+
+%% ------------------------------------------------------------
+% BUILD STATE VECTORS
+% **FIXED**: Swapped states back. Roll (y/2) and Pitch (x/1)
+%            Please verify th(1) vs th(2) matches your setup.
+%            Commonly: th(1)=pitch, th(2)=roll
+%% ------------------------------------------------------------
+
+Kr = [-6.98, 4.45, 20.88, 6.09, 5.11];  % example row
+Kp = [-3.27, 4.01, 29.07, 8.54, 5.72];  % example row
+
+
+xr = [ th(1);         % Roll angle
+       th_dot(1);     % Roll rate
+       ball_pos(1);   % Ball X position (relative to roll)
+       ball_dot(1);   % Ball X velocity
+       x5(1)          % Roll integral term
+       ];
+       
+xp = [ th(2);         % Pitch angle
+       th_dot(2);     % Pitch rate
+       ball_pos(2);   % Ball Y position (relative to pitch)
+       ball_dot(2);   % Ball Y velocity
+       x5(2)          % Pitch integral term
+       ];
+
+%% ------------------------------------------------------------
+% CONTROL LAWS (Simple multiplication)
+%% ------------------------------------------------------------
+vy = -Kr * xr;   % Roll command
+vx = -Kp * xp;   % Pitch command
+end</P>
+      </eml>
+    </state>
+    <data SSID="15" name="x5">
+      <P Name="scope">INPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+          <P Name="isSigned">1</P>
+          <P Name="wordLength">16</P>
+        </type>
+        <P Name="complexity">SF_COMPLEX_INHERITED</P>
+        <P Name="frame">SF_FRAME_INHERITED</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <data SSID="16" name="th_dot">
+      <P Name="scope">INPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+          <P Name="isSigned">1</P>
+          <P Name="wordLength">16</P>
+        </type>
+        <P Name="complexity">SF_COMPLEX_INHERITED</P>
+        <P Name="frame">SF_FRAME_INHERITED</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <data SSID="17" name="th">
+      <P Name="scope">INPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+          <P Name="isSigned">1</P>
+          <P Name="wordLength">16</P>
+        </type>
+        <P Name="complexity">SF_COMPLEX_INHERITED</P>
+        <P Name="frame">SF_FRAME_INHERITED</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <data SSID="18" name="ball_dot">
+      <P Name="scope">INPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+          <P Name="isSigned">1</P>
+          <P Name="wordLength">16</P>
+        </type>
+        <P Name="complexity">SF_COMPLEX_INHERITED</P>
+        <P Name="frame">SF_FRAME_INHERITED</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <data SSID="19" name="ball_pos">
+      <P Name="scope">INPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+          <P Name="isSigned">1</P>
+          <P Name="wordLength">16</P>
+        </type>
+        <P Name="complexity">SF_COMPLEX_INHERITED</P>
+        <P Name="frame">SF_FRAME_INHERITED</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <data SSID="22" name="vy">
+      <P Name="scope">OUTPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">[1]</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+          <P Name="isSigned">1</P>
+          <P Name="wordLength">16</P>
+        </type>
+        <P Name="complexity">SF_COMPLEX_INHERITED</P>
+        <P Name="frame">SF_FRAME_NO</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <data SSID="5" name="vx">
+      <P Name="scope">OUTPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">[1]</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+        </type>
+        <P Name="complexity">SF_COMPLEX_INHERITED</P>
+        <P Name="frame">SF_FRAME_NO</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <transition SSID="2">
+      <P Name="labelString">{eML_blk_kernel();}</P>
+      <P Name="labelPosition">[28.125 13.875 102.544 14.964]</P>
+      <P Name="fontSize">12</P>
+      <src>
+        <P Name="intersection">[0 0 1 0 23.5747 14.625 0 0]</P>
+      </src>
+      <dst>
+        <P Name="SSID">3</P>
+        <P Name="intersection">[1 0 -1 0 23.5747 42.5747 0 0]</P>
+      </dst>
+      <P Name="midPoint">[23.5747 24.9468]</P>
+      <P Name="dataLimits">[21.175 25.975 14.625 42.575]</P>
+      <P Name="subviewer">58</P>
+      <P Name="drawStyle">SMART</P>
+      <slide>
+        <P Name="sticky">BOTH_STICK</P>
+      </slide>
+      <P Name="executionOrder">1</P>
+    </transition>
+    <junction SSID="3">
+      <P Name="position">[23.5747 49.5747 7]</P>
+      <P Name="subviewer">58</P>
+      <P Name="type">CONNECTIVE_JUNCTION</P>
+    </junction>
+  </Children>
+</chart>
+
+__MWOPC_PART_BEGIN__ /simulink/stateflow/chart_70.xml
+<?xml version="1.0" encoding="utf-8"?>
+<chart id="70">
+  <P Name="name">MATLAB Function4</P>
+  <P Name="windowPosition">[422 539.941 189 413]</P>
+  <P Name="viewLimits">[0 156.75 0 153.75]</P>
+  <P Name="screen">[1 1 3600 1200 1.180555555555556]</P>
+  <P Name="viewObj">70</P>
+  <P Name="ssIdHighWaterMark">10</P>
+  <P Name="decomposition">CLUSTER_CHART</P>
+  <P Name="type">EML_CHART</P>
+  <P Name="chartFileNumber">5</P>
+  <P Name="disableImplicitCasting">1</P>
+  <eml>
+    <P Name="name">init_params</P>
+  </eml>
+  <Children>
+    <state SSID="1">
+      <P Name="labelString">eML_blk_kernel()</P>
+      <P Name="position">[18 64.5 118 66]</P>
+      <P Name="fontSize">12</P>
+      <P Name="superState">SUBCHART</P>
+      <P Name="subviewer">70</P>
+      <P Name="type">FUNC_STATE</P>
+      <P Name="decomposition">CLUSTER_STATE</P>
+      <eml>
+        <P Name="isEML">1</P>
+        <P Name="script">function params_vec = init_params()
+% init_params.m
+% Returns parameters as a 20×1 vector (NO STRUCT)
+
+mk  = 19.6;                   % (1) ball mass
+Ik  = 0.38;                   % (2) ball inertia
+ma  = 68;                     % (3) body mass
+Ix  = 12.1;                   % (4) body inertia x
+Iy  = 11.67;                  % (5) body inertia y
+Iz  = 1.08;                   % (6) body inertia z
+l   = 0.38;                   % (7) COM height
+a   = deg2rad(65.5);          % (8) zenith angle
+rk  = 0.22;                   % (9) ball radius
+rw  = 0.10;                   % (10) omniwheel radius
+bx  = 0.10;                   % (11) viscous friction xz
+dx  = 0.01;                   % (12) coulomb friction xz
+by  = 0.10;                   % (13) viscous friction yz
+dy  = 0.01;                   % (14) coulomb friction yz
+bry = 0.12;                   % (15) body/ball viscous xz
+dry = 0.02;                   % (16) coulomb xz
+brx = 0.12;                   % (17) body/ball viscous yz
+drx = 0.02;                   % (18) coulomb yz
+g   = 9.81;                   % (19) gravity
+k_motor = 1;                  % (20) motor constant
+
+
+% Return as vector
+params_vec = [
+    mk; Ik; ma; Ix; Iy; Iz;
+    l; a; rk; rw;
+    bx; dx; by; dy;
+    bry; dry; brx; drx;
+    g; k_motor
+];
+end
+</P>
+      </eml>
+    </state>
+    <data SSID="5" name="params_vec">
+      <P Name="scope">OUTPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">[20 1]</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+        </type>
+        <P Name="complexity">SF_COMPLEX_INHERITED</P>
+        <P Name="frame">SF_FRAME_NO</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <transition SSID="2">
+      <P Name="labelString">{eML_blk_kernel();}</P>
+      <P Name="labelPosition">[28.125 13.875 102.544 14.964]</P>
+      <P Name="fontSize">12</P>
+      <src>
+        <P Name="intersection">[0 0 1 0 23.5747 14.625 0 0]</P>
+      </src>
+      <dst>
+        <P Name="SSID">3</P>
+        <P Name="intersection">[1 0 -1 0 23.5747 42.5747 0 0]</P>
+      </dst>
+      <P Name="midPoint">[23.5747 24.9468]</P>
+      <P Name="dataLimits">[21.175 25.975 14.625 42.575]</P>
+      <P Name="subviewer">70</P>
+      <P Name="drawStyle">SMART</P>
+      <slide>
+        <P Name="sticky">BOTH_STICK</P>
+      </slide>
+      <P Name="executionOrder">1</P>
+    </transition>
+    <junction SSID="3">
+      <P Name="position">[23.5747 49.5747 7]</P>
+      <P Name="subviewer">70</P>
+      <P Name="type">CONNECTIVE_JUNCTION</P>
+    </junction>
+  </Children>
+</chart>
+
+__MWOPC_PART_BEGIN__ /simulink/stateflow/chart_76.xml
+<?xml version="1.0" encoding="utf-8"?>
+<chart id="76">
+  <P Name="name">MATLAB Function2</P>
+  <P Name="windowPosition">[422 539.941 189 413]</P>
+  <P Name="viewLimits">[0 156.75 0 153.75]</P>
+  <P Name="screen">[1 1 3600 1200 1.180555555555556]</P>
+  <P Name="viewObj">76</P>
+  <P Name="visible">1</P>
+  <subviewS/>
+  <P Name="ssIdHighWaterMark">26</P>
+  <P Name="decomposition">CLUSTER_CHART</P>
+  <P Name="type">EML_CHART</P>
+  <P Name="chartFileNumber">7</P>
+  <P Name="disableImplicitCasting">1</P>
+  <eml>
+    <P Name="name">LQR_Block</P>
+  </eml>
+  <Children>
+    <state SSID="1">
+      <P Name="labelString">eML_blk_kernel()</P>
+      <P Name="position">[18 64.5 118 66]</P>
+      <P Name="fontSize">12</P>
+      <P Name="superState">SUBCHART</P>
+      <P Name="subviewer">76</P>
+      <P Name="type">FUNC_STATE</P>
+      <P Name="decomposition">CLUSTER_STATE</P>
+      <eml>
+        <P Name="isEML">1</P>
+        <P Name="script">function [vy, vx] = LQR_Block(x5, th_dot, th, ball_dot, ball_pos)
+%(x5, th, th_dot, )
+% ========================================================================
+%   REAL-TIME LQR CONTROLLER BLOCK
+%   Applies pre-calculated gains Kr and Kp to the system states.
+%
+%   This block EXPECTS &apos;Kr&apos; and &apos;Kp&apos; to be passed in as parameters.
+% ========================================================================
+
+%% ------------------------------------------------------------
+% BUILD STATE VECTORS
+% **FIXED**: Swapped states back. Roll (y/2) and Pitch (x/1)
+%            Please verify th(1) vs th(2) matches your setup.
+%            Commonly: th(1)=pitch, th(2)=roll
+%% ------------------------------------------------------------
+
+Kr = [-6.98, 4.45, 20.88, 6.09, 5.11];  % example row
+Kp = [-3.27, 4.01, 29.07, 8.54, 5.72];  % example row
+
+
+xr = [ th(1);         % Roll angle
+       th_dot(1);     % Roll rate
+       ball_pos(1);   % Ball X position (relative to roll)
+       ball_dot(1);   % Ball X velocity
+       x5(1)          % Roll integral term
+       ];
+       
+xp = [ th(2);         % Pitch angle
+       th_dot(2);     % Pitch rate
+       ball_pos(2);   % Ball Y position (relative to pitch)
+       ball_dot(2);   % Ball Y velocity
+       x5(2)          % Pitch integral term
+       ];
+
+%% ------------------------------------------------------------
+% CONTROL LAWS (Simple multiplication)
+%% ------------------------------------------------------------
+vy = -Kr * xr;   % Roll command
+vx = -Kp * xp;   % Pitch command
+end</P>
+      </eml>
+    </state>
+    <data SSID="15" name="x5">
+      <P Name="scope">INPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+          <P Name="isSigned">1</P>
+          <P Name="wordLength">16</P>
+        </type>
+        <P Name="complexity">SF_COMPLEX_INHERITED</P>
+        <P Name="frame">SF_FRAME_INHERITED</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <data SSID="16" name="th_dot">
+      <P Name="scope">INPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+          <P Name="isSigned">1</P>
+          <P Name="wordLength">16</P>
+        </type>
+        <P Name="complexity">SF_COMPLEX_INHERITED</P>
+        <P Name="frame">SF_FRAME_INHERITED</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <data SSID="17" name="th">
+      <P Name="scope">INPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+          <P Name="isSigned">1</P>
+          <P Name="wordLength">16</P>
+        </type>
+        <P Name="complexity">SF_COMPLEX_INHERITED</P>
+        <P Name="frame">SF_FRAME_INHERITED</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <data SSID="18" name="ball_dot">
+      <P Name="scope">INPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+          <P Name="isSigned">1</P>
+          <P Name="wordLength">16</P>
+        </type>
+        <P Name="complexity">SF_COMPLEX_INHERITED</P>
+        <P Name="frame">SF_FRAME_INHERITED</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <data SSID="19" name="ball_pos">
+      <P Name="scope">INPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">-1</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+          <P Name="isSigned">1</P>
+          <P Name="wordLength">16</P>
+        </type>
+        <P Name="complexity">SF_COMPLEX_INHERITED</P>
+        <P Name="frame">SF_FRAME_INHERITED</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <data SSID="22" name="vy">
+      <P Name="scope">OUTPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">[1]</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+          <P Name="isSigned">1</P>
+          <P Name="wordLength">16</P>
+        </type>
+        <P Name="complexity">SF_COMPLEX_INHERITED</P>
+        <P Name="frame">SF_FRAME_NO</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <data SSID="5" name="vx">
+      <P Name="scope">OUTPUT_DATA</P>
+      <props>
+        <array>
+          <P Name="size">[1]</P>
+        </array>
+        <type>
+          <P Name="method">SF_INHERITED_TYPE</P>
+          <P Name="primitive">SF_DOUBLE_TYPE</P>
+        </type>
+        <P Name="complexity">SF_COMPLEX_INHERITED</P>
+        <P Name="frame">SF_FRAME_NO</P>
+        <unit>
+          <P Name="name">inherit</P>
+        </unit>
+      </props>
+      <P Name="dataType">Inherit: Same as Simulink</P>
+    </data>
+    <transition SSID="2">
+      <P Name="labelString">{eML_blk_kernel();}</P>
+      <P Name="labelPosition">[28.125 13.875 102.544 14.964]</P>
+      <P Name="fontSize">12</P>
+      <src>
+        <P Name="intersection">[0 0 1 0 23.5747 14.625 0 0]</P>
+      </src>
+      <dst>
+        <P Name="SSID">3</P>
+        <P Name="intersection">[1 0 -1 0 23.5747 42.5747 0 0]</P>
+      </dst>
+      <P Name="midPoint">[23.5747 24.9468]</P>
+      <P Name="dataLimits">[21.175 25.975 14.625 42.575]</P>
+      <P Name="subviewer">76</P>
+      <P Name="drawStyle">SMART</P>
+      <slide>
+        <P Name="sticky">BOTH_STICK</P>
+      </slide>
+      <P Name="executionOrder">1</P>
+    </transition>
+    <junction SSID="3">
+      <P Name="position">[23.5747 49.5747 7]</P>
+      <P Name="subviewer">76</P>
+      <P Name="type">CONNECTIVE_JUNCTION</P>
+    </junction>
+  </Children>
+</chart>
+
+__MWOPC_PART_BEGIN__ /simulink/stateflow/machine.xml
+<?xml version="1.0" encoding="utf-8"?>
+<Stateflow>
+  <machine id="27">
+    <P Name="sfVersion">82450000</P>
+    <Children>
+      <target id="88" name="sfun">
+        <P Name="description">Default Simulink S-Function Target.</P>
+      </target>
+      <chart Ref="chart_28"/>
+      <chart Ref="chart_38"/>
+      <chart Ref="chart_48"/>
+      <chart Ref="chart_58"/>
+      <chart Ref="chart_70"/>
+      <chart Ref="chart_76"/>
+    </Children>
+  </machine>
+  <instance id="37">
+    <P Name="machine">27</P>
+    <P Name="name">Subsystem/MATLAB Function1</P>
+    <P Name="chart">28</P>
+  </instance>
+  <instance id="47">
+    <P Name="machine">27</P>
+    <P Name="name">Subsystem/MATLAB Function</P>
+    <P Name="chart">38</P>
+  </instance>
+  <instance id="57">
+    <P Name="machine">27</P>
+    <P Name="name">Subsystem/MATLAB Function2</P>
+    <P Name="chart">48</P>
+  </instance>
+  <instance id="69">
+    <P Name="machine">27</P>
+    <P Name="name">MATLAB Function1</P>
+    <P Name="chart">58</P>
+  </instance>
+  <instance id="75">
+    <P Name="machine">27</P>
+    <P Name="name">MATLAB Function4</P>
+    <P Name="chart">70</P>
+  </instance>
+  <instance id="87">
+    <P Name="machine">27</P>
+    <P Name="name">MATLAB Function2</P>
+    <P Name="chart">76</P>
+  </instance>
+</Stateflow>
+
+__MWOPC_PART_BEGIN__ /simulink/systems/_rels/system_22.xml.rels
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
+  <Relationship Id="system_10" Target="system_10.xml" Type="http://schemas.mathworks.com/simulink/2010/relationships/system"/>
+  <Relationship Id="system_11" Target="system_11.xml" Type="http://schemas.mathworks.com/simulink/2010/relationships/system"/>
+  <Relationship Id="system_9" Target="system_9.xml" Type="http://schemas.mathworks.com/simulink/2010/relationships/system"/>
+</Relationships>
+
+__MWOPC_PART_BEGIN__ /simulink/systems/_rels/system_root.xml.rels
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
+  <Relationship Id="system_128" Target="system_128.xml" Type="http://schemas.mathworks.com/simulink/2010/relationships/system"/>
+  <Relationship Id="system_13" Target="system_13.xml" Type="http://schemas.mathworks.com/simulink/2010/relationships/system"/>
+  <Relationship Id="system_22" Target="system_22.xml" Type="http://schemas.mathworks.com/simulink/2010/relationships/system"/>
+  <Relationship Id="system_68" Target="system_68.xml" Type="http://schemas.mathworks.com/simulink/2010/relationships/system"/>
+</Relationships>
+
+__MWOPC_PART_BEGIN__ /simulink/systems/system_10.xml
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[223, 338, 826, 833]</P>
+  <P Name="SIDHighWatermark">35</P>
+  <Block BlockType="Inport" Name="t" SID="10::1">
+    <P Name="Position">[20, 101, 40, 119]</P>
+    <P Name="ZOrder">-1</P>
+  </Block>
+  <Block BlockType="Inport" Name="x_z" SID="10::28">
+    <P Name="Position">[20, 136, 40, 154]</P>
+    <P Name="ZOrder">19</P>
+    <P Name="Port">2</P>
+  </Block>
+  <Block BlockType="Inport" Name="params_vec" SID="10::35">
+    <P Name="Position">[20, 171, 40, 189]</P>
+    <P Name="ZOrder">26</P>
+    <P Name="Port">3</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">params_vec</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="Inport" Name="tau_z" SID="10::30">
+    <P Name="Position">[20, 206, 40, 224]</P>
+    <P Name="ZOrder">21</P>
+    <P Name="Port">4</P>
+  </Block>
+  <Block BlockType="Demux" Name=" Demux " SID="10::33">
+    <PortCounts in="1" out="1"/>
+    <P Name="Position">[270, 230, 320, 270]</P>
+    <P Name="ZOrder">24</P>
+    <P Name="Outputs">1</P>
+  </Block>
+  <Block BlockType="S-Function" Name=" SFunction " SID="10::32">
+    <P Name="Tag">Stateflow S-Function 1</P>
+    <PortCounts in="4" out="2"/>
+    <P Name="Position">[180, 107, 230, 208]</P>
+    <P Name="ZOrder">23</P>
+    <P Name="FunctionName">sf_sfun</P>
+    <P Name="PortCounts">[4 2]</P>
+    <P Name="SFunctionDeploymentMode">off</P>
+    <P Name="EnableBusSupport">on</P>
+    <P Name="SFcnIsStateOwnerBlock">off</P>
+    <PortProperties>
+      <Port Type="out" Index="2">
+        <P Name="Name">dx_z_dt</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="Terminator" Name=" Terminator " SID="10::34">
+    <P Name="Position">[460, 241, 480, 259]</P>
+    <P Name="ZOrder">25</P>
+  </Block>
+  <Block BlockType="Outport" Name="dx_z_dt" SID="10::5">
+    <P Name="Position">[460, 101, 480, 119]</P>
+    <P Name="ZOrder">-5</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">1</P>
+    <P Name="Src">10::1#out:1</P>
+    <P Name="Dst">10::32#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">2</P>
+    <P Name="Src">10::28#out:1</P>
+    <P Name="Dst">10::32#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">3</P>
+    <P Name="Src">10::35#out:1</P>
+    <P Name="Dst">10::32#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">4</P>
+    <P Name="Src">10::30#out:1</P>
+    <P Name="Dst">10::32#in:4</P>
+  </Line>
+  <Line>
+    <P Name="Name">dx_z_dt</P>
+    <P Name="ZOrder">5</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">10::32#out:2</P>
+    <P Name="Dst">10::5#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">6</P>
+    <P Name="Src">10::33#out:1</P>
+    <P Name="Dst">10::34#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">7</P>
+    <P Name="Src">10::32#out:1</P>
+    <P Name="Dst">10::33#in:1</P>
+  </Line>
+</System>
+
+__MWOPC_PART_BEGIN__ /simulink/systems/system_11.xml
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[223, 338, 826, 833]</P>
+  <P Name="SIDHighWatermark">35</P>
+  <Block BlockType="Inport" Name="t" SID="11::1">
+    <P Name="Position">[20, 101, 40, 119]</P>
+    <P Name="ZOrder">-1</P>
+  </Block>
+  <Block BlockType="Inport" Name="x_r" SID="11::28">
+    <P Name="Position">[20, 136, 40, 154]</P>
+    <P Name="ZOrder">19</P>
+    <P Name="Port">2</P>
+  </Block>
+  <Block BlockType="Inport" Name="params_vec" SID="11::35">
+    <P Name="Position">[20, 171, 40, 189]</P>
+    <P Name="ZOrder">26</P>
+    <P Name="Port">3</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">params_vec</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="Inport" Name="tau_x" SID="11::30">
+    <P Name="Position">[20, 206, 40, 224]</P>
+    <P Name="ZOrder">21</P>
+    <P Name="Port">4</P>
+  </Block>
+  <Block BlockType="Demux" Name=" Demux " SID="11::33">
+    <PortCounts in="1" out="1"/>
+    <P Name="Position">[270, 230, 320, 270]</P>
+    <P Name="ZOrder">24</P>
+    <P Name="Outputs">1</P>
+  </Block>
+  <Block BlockType="S-Function" Name=" SFunction " SID="11::32">
+    <P Name="Tag">Stateflow S-Function 3</P>
+    <PortCounts in="4" out="2"/>
+    <P Name="Position">[180, 107, 230, 208]</P>
+    <P Name="ZOrder">23</P>
+    <P Name="FunctionName">sf_sfun</P>
+    <P Name="PortCounts">[4 2]</P>
+    <P Name="SFunctionDeploymentMode">off</P>
+    <P Name="EnableBusSupport">on</P>
+    <P Name="SFcnIsStateOwnerBlock">off</P>
+    <PortProperties>
+      <Port Type="out" Index="2">
+        <P Name="Name">dx_r_dt</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="Terminator" Name=" Terminator " SID="11::34">
+    <P Name="Position">[460, 241, 480, 259]</P>
+    <P Name="ZOrder">25</P>
+  </Block>
+  <Block BlockType="Outport" Name="dx_r_dt" SID="11::5">
+    <P Name="Position">[460, 101, 480, 119]</P>
+    <P Name="ZOrder">-5</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">1</P>
+    <P Name="Src">11::1#out:1</P>
+    <P Name="Dst">11::32#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">2</P>
+    <P Name="Src">11::28#out:1</P>
+    <P Name="Dst">11::32#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">3</P>
+    <P Name="Src">11::35#out:1</P>
+    <P Name="Dst">11::32#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">4</P>
+    <P Name="Src">11::30#out:1</P>
+    <P Name="Dst">11::32#in:4</P>
+  </Line>
+  <Line>
+    <P Name="Name">dx_r_dt</P>
+    <P Name="ZOrder">5</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">11::32#out:2</P>
+    <P Name="Dst">11::5#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">6</P>
+    <P Name="Src">11::33#out:1</P>
+    <P Name="Dst">11::34#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">7</P>
+    <P Name="Src">11::32#out:1</P>
+    <P Name="Dst">11::33#in:1</P>
+  </Line>
+</System>
+
+__MWOPC_PART_BEGIN__ /simulink/systems/system_128.xml
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[223, 338, 826, 833]</P>
+  <P Name="SIDHighWatermark">52</P>
+  <Block BlockType="Inport" Name="x5" SID="128::41">
+    <P Name="Position">[20, 101, 40, 119]</P>
+    <P Name="ZOrder">32</P>
+  </Block>
+  <Block BlockType="Inport" Name="th_dot" SID="128::42">
+    <P Name="Position">[20, 136, 40, 154]</P>
+    <P Name="ZOrder">33</P>
+    <P Name="Port">2</P>
+  </Block>
+  <Block BlockType="Inport" Name="th" SID="128::43">
+    <P Name="Position">[20, 171, 40, 189]</P>
+    <P Name="ZOrder">34</P>
+    <P Name="Port">3</P>
+  </Block>
+  <Block BlockType="Inport" Name="ball_dot" SID="128::44">
+    <P Name="Position">[20, 206, 40, 224]</P>
+    <P Name="ZOrder">35</P>
+    <P Name="Port">4</P>
+  </Block>
+  <Block BlockType="Inport" Name="ball_pos" SID="128::45">
+    <P Name="Position">[20, 246, 40, 264]</P>
+    <P Name="ZOrder">36</P>
+    <P Name="Port">5</P>
+  </Block>
+  <Block BlockType="Demux" Name=" Demux " SID="128::33">
+    <PortCounts in="1" out="1"/>
+    <P Name="Position">[270, 230, 320, 270]</P>
+    <P Name="ZOrder">24</P>
+    <P Name="Outputs">1</P>
+  </Block>
+  <Block BlockType="S-Function" Name=" SFunction " SID="128::32">
+    <P Name="Tag">Stateflow S-Function 4</P>
+    <PortCounts in="5" out="3"/>
+    <P Name="Position">[180, 135, 230, 255]</P>
+    <P Name="ZOrder">23</P>
+    <P Name="FunctionName">sf_sfun</P>
+    <P Name="PortCounts">[5 3]</P>
+    <P Name="SFunctionDeploymentMode">off</P>
+    <P Name="EnableBusSupport">on</P>
+    <P Name="SFcnIsStateOwnerBlock">off</P>
+    <PortProperties>
+      <Port Type="out" Index="2">
+        <P Name="Name">vy</P>
+      </Port>
+      <Port Type="out" Index="3">
+        <P Name="Name">vx</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="Terminator" Name=" Terminator " SID="128::34">
+    <P Name="Position">[460, 241, 480, 259]</P>
+    <P Name="ZOrder">25</P>
+  </Block>
+  <Block BlockType="Outport" Name="vy" SID="128::48">
+    <P Name="Position">[460, 101, 480, 119]</P>
+    <P Name="ZOrder">39</P>
+  </Block>
+  <Block BlockType="Outport" Name="vx" SID="128::5">
+    <P Name="Position">[460, 136, 480, 154]</P>
+    <P Name="ZOrder">-5</P>
+    <P Name="Port">2</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">1</P>
+    <P Name="Src">128::32#out:1</P>
+    <P Name="Points">[3, 0; 0, 95]</P>
+    <P Name="Dst">128::33#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">2</P>
+    <P Name="Src">128::33#out:1</P>
+    <P Name="Dst">128::34#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">vx</P>
+    <P Name="ZOrder">3</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">128::32#out:3</P>
+    <P Name="Points">[20, 0; 0, -90]</P>
+    <P Name="Dst">128::5#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">vy</P>
+    <P Name="ZOrder">4</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">128::32#out:2</P>
+    <P Name="Points">[10, 0; 0, -85]</P>
+    <P Name="Dst">128::48#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">5</P>
+    <P Name="Src">128::45#out:1</P>
+    <P Name="Points">[65, 0; 0, -10]</P>
+    <P Name="Dst">128::32#in:5</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">6</P>
+    <P Name="Src">128::44#out:1</P>
+    <P Name="Points">[60, 0; 0, 5]</P>
+    <P Name="Dst">128::32#in:4</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">7</P>
+    <P Name="Src">128::43#out:1</P>
+    <P Name="Points">[65, 0; 0, 15]</P>
+    <P Name="Dst">128::32#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">8</P>
+    <P Name="Src">128::42#out:1</P>
+    <P Name="Points">[66, 0; 0, 25]</P>
+    <P Name="Dst">128::32#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">9</P>
+    <P Name="Src">128::41#out:1</P>
+    <P Name="Points">[101, 0; 0, 35]</P>
+    <P Name="Dst">128::32#in:1</P>
+  </Line>
+</System>
+
+__MWOPC_PART_BEGIN__ /simulink/systems/system_13.xml
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[223, 338, 826, 833]</P>
+  <P Name="SIDHighWatermark">36</P>
+  <Block BlockType="Demux" Name=" Demux " SID="13::33">
+    <PortCounts in="1" out="1"/>
+    <P Name="Position">[270, 230, 320, 270]</P>
+    <P Name="ZOrder">24</P>
+    <P Name="Outputs">1</P>
+  </Block>
+  <Block BlockType="Ground" Name=" Ground " SID="13::36">
+    <P Name="Position">[20, 131, 40, 149]</P>
+    <P Name="ZOrder">27</P>
+  </Block>
+  <Block BlockType="S-Function" Name=" SFunction " SID="13::32">
+    <P Name="Tag">Stateflow S-Function 5</P>
+    <PortCounts in="1" out="2"/>
+    <P Name="Position">[180, 110, 230, 170]</P>
+    <P Name="ZOrder">23</P>
+    <P Name="FunctionName">sf_sfun</P>
+    <P Name="PortCounts">[1 2]</P>
+    <P Name="SFunctionDeploymentMode">off</P>
+    <P Name="EnableBusSupport">on</P>
+    <P Name="SFcnIsStateOwnerBlock">off</P>
+    <PortProperties>
+      <Port Type="out" Index="2">
+        <P Name="Name">params_vec</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="Terminator" Name=" Terminator " SID="13::34">
+    <P Name="Position">[460, 241, 480, 259]</P>
+    <P Name="ZOrder">25</P>
+  </Block>
+  <Block BlockType="Outport" Name="params_vec" SID="13::5">
+    <P Name="Position">[460, 101, 480, 119]</P>
+    <P Name="ZOrder">-5</P>
+  </Block>
+  <Line>
+    <P Name="Name">params_vec</P>
+    <P Name="ZOrder">1</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">13::32#out:2</P>
+    <P Name="Points">[113, 0; 0, -45]</P>
+    <P Name="Dst">13::5#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">2</P>
+    <P Name="Src">13::36#out:1</P>
+    <P Name="Dst">13::32#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">3</P>
+    <P Name="Src">13::33#out:1</P>
+    <P Name="Dst">13::34#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">4</P>
+    <P Name="Src">13::32#out:1</P>
+    <P Name="Points">[15, 0; 0, 125]</P>
+    <P Name="Dst">13::33#in:1</P>
+  </Line>
+</System>
+
+__MWOPC_PART_BEGIN__ /simulink/systems/system_22.xml
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[0, 0, 768, 816]</P>
+  <P Name="SystemRect">[-92.243626, -46.000000, 1208.243626, 582.000000]</P>
+  <P Name="Open">on</P>
+  <P Name="ZoomFactor">60</P>
+  <Block BlockType="Inport" Name="tau_x" SID="24">
+    <P Name="Position">[20, 193, 50, 207]</P>
+    <P Name="ZOrder">56</P>
+  </Block>
+  <Block BlockType="Inport" Name="tau_y" SID="25">
+    <P Name="Position">[20, 233, 50, 247]</P>
+    <P Name="ZOrder">57</P>
+    <P Name="Port">2</P>
+  </Block>
+  <Block BlockType="Inport" Name="tau_z" SID="26">
+    <P Name="Position">[20, 273, 50, 287]</P>
+    <P Name="ZOrder">58</P>
+    <P Name="Port">3</P>
+  </Block>
+  <Block BlockType="Inport" Name="Parameters" SID="53">
+    <P Name="Position">[110, 133, 140, 147]</P>
+    <P Name="ZOrder">78</P>
+    <P Name="Port">4</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">params_vec</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="Integrator" Name="Integrator" SID="6">
+    <PortCounts in="1" out="1"/>
+    <P Name="Position">[540, 200, 570, 230]</P>
+    <P Name="ZOrder">40</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="InitialCondition">[0; 0; 0; 0]</P>
+  </Block>
+  <Block BlockType="Integrator" Name="Integrator1" SID="7">
+    <PortCounts in="1" out="1"/>
+    <P Name="Position">[540, 360, 570, 390]</P>
+    <P Name="ZOrder">41</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="InitialCondition">[0 ;0]</P>
+  </Block>
+  <Block BlockType="Integrator" Name="Integrator2" SID="8">
+    <PortCounts in="1" out="1"/>
+    <P Name="Position">[540, 20, 570, 50]</P>
+    <P Name="ZOrder">42</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="InitialCondition">[0; 0; 0; 0]</P>
+  </Block>
+  <Block BlockType="SubSystem" Name="MATLAB Function" SID="9">
+    <PortCounts in="4" out="1"/>
+    <P Name="Position">[445, 238, 630, 352]</P>
+    <P Name="ZOrder">37</P>
+    <P Name="ErrorFcn">Stateflow.Translate.translate</P>
+    <P Name="PermitHierarchicalResolution">ExplicitOnly</P>
+    <P Name="TreatAsAtomicUnit">on</P>
+    <P Name="SFBlockType">MATLAB Function</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">dx_p_dt</P>
+      </Port>
+    </PortProperties>
+    <System Ref="system_9"/>
+  </Block>
+  <Block BlockType="SubSystem" Name="MATLAB Function1" SID="10">
+    <PortCounts in="4" out="1"/>
+    <P Name="Position">[445, 413, 630, 527]</P>
+    <P Name="ZOrder">38</P>
+    <P Name="ErrorFcn">Stateflow.Translate.translate</P>
+    <P Name="PermitHierarchicalResolution">ExplicitOnly</P>
+    <P Name="TreatAsAtomicUnit">on</P>
+    <P Name="SFBlockType">MATLAB Function</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">dx_z_dt</P>
+      </Port>
+    </PortProperties>
+    <System Ref="system_10"/>
+  </Block>
+  <Block BlockType="SubSystem" Name="MATLAB Function2" SID="11">
+    <PortCounts in="4" out="1"/>
+    <P Name="Position">[445, 68, 630, 182]</P>
+    <P Name="ZOrder">39</P>
+    <P Name="ErrorFcn">Stateflow.Translate.translate</P>
+    <P Name="PermitHierarchicalResolution">ExplicitOnly</P>
+    <P Name="TreatAsAtomicUnit">on</P>
+    <P Name="SFBlockType">MATLAB Function</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">dx_r_dt</P>
+      </Port>
+    </PortProperties>
+    <System Ref="system_11"/>
+  </Block>
+  <Block BlockType="Step" Name="time" SID="21">
+    <P Name="Position">[130, 65, 160, 95]</P>
+    <P Name="ZOrder">45</P>
+    <P Name="NameLocation">right</P>
+    <P Name="After">10</P>
+    <P Name="SampleTime">0</P>
+  </Block>
+  <Block BlockType="Outport" Name="dx_r_dt" SID="27">
+    <P Name="Position">[1075, 118, 1105, 132]</P>
+    <P Name="ZOrder">59</P>
+  </Block>
+  <Block BlockType="Outport" Name="dx_p_dt" SID="34">
+    <P Name="Position">[1075, 288, 1105, 302]</P>
+    <P Name="ZOrder">66</P>
+    <P Name="Port">2</P>
+  </Block>
+  <Block BlockType="Outport" Name="dx_z_dt" SID="35">
+    <P Name="Position">[1080, 458, 1110, 472]</P>
+    <P Name="ZOrder">67</P>
+    <P Name="Port">3</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">15</P>
+    <P Name="Src">21#out:1</P>
+    <P Name="Points">[190, 0]</P>
+    <Branch>
+      <P Name="ZOrder">36</P>
+      <P Name="Points">[0, 170]</P>
+      <Branch>
+        <P Name="ZOrder">13</P>
+        <P Name="Points">[0, 175]</P>
+        <P Name="Dst">10#in:1</P>
+      </Branch>
+      <Branch>
+        <P Name="ZOrder">12</P>
+        <P Name="Dst">9#in:1</P>
+      </Branch>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">35</P>
+      <P Name="Dst">11#in:1</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">27</P>
+    <P Name="Src">7#out:1</P>
+    <P Name="Points">[-105, 0]</P>
+    <P Name="Dst">10#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">76</P>
+    <P Name="Src">53#out:1</P>
+    <P Name="Points">[135, 0]</P>
+    <Branch>
+      <P Name="ZOrder">34</P>
+      <P Name="Points">[0, 170]</P>
+      <Branch>
+        <P Name="ZOrder">31</P>
+        <P Name="Dst">9#in:3</P>
+      </Branch>
+      <Branch>
+        <P Name="ZOrder">29</P>
+        <P Name="Points">[0, 175]</P>
+        <P Name="Dst">10#in:3</P>
+      </Branch>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">28</P>
+      <P Name="Dst">11#in:3</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">25</P>
+    <P Name="Src">8#out:1</P>
+    <P Name="Points">[-114, 0; 0, 75]</P>
+    <P Name="Dst">11#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">20</P>
+    <P Name="Src">10#out:1</P>
+    <P Name="Points">[34, 0; 0, -5]</P>
+    <Branch>
+      <P Name="ZOrder">60</P>
+      <P Name="Points">[0, -90]</P>
+      <P Name="Dst">7#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">57</P>
+      <P Name="Dst">35#in:1</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">48</P>
+    <P Name="Src">26#out:1</P>
+    <P Name="Points">[53, 0; 0, 235]</P>
+    <P Name="Dst">10#in:4</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">16</P>
+    <P Name="Src">6#out:1</P>
+    <P Name="Points">[-114, 0; 0, 65]</P>
+    <P Name="Dst">9#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">47</P>
+    <P Name="Src">25#out:1</P>
+    <P Name="Points">[110, 0; 0, 100]</P>
+    <P Name="Dst">9#in:4</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">46</P>
+    <P Name="Src">24#out:1</P>
+    <P Name="Points">[110, 0; 0, -30]</P>
+    <P Name="Dst">11#in:4</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">9</P>
+    <P Name="Src">9#out:1</P>
+    <P Name="Points">[34, 0]</P>
+    <Branch>
+      <P Name="ZOrder">8</P>
+      <P Name="Points">[0, -80]</P>
+      <P Name="Dst">6#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">7</P>
+      <P Name="Dst">34#in:1</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">24</P>
+    <P Name="Src">11#out:1</P>
+    <P Name="Points">[71, 0]</P>
+    <Branch>
+      <P Name="ZOrder">49</P>
+      <P Name="Dst">27#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">21</P>
+      <P Name="Points">[0, -90]</P>
+      <P Name="Dst">8#in:1</P>
+    </Branch>
+  </Line>
+</System>
+
+__MWOPC_PART_BEGIN__ /simulink/systems/system_68.xml
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[223, 338, 826, 833]</P>
+  <P Name="SIDHighWatermark">52</P>
+  <Block BlockType="Inport" Name="x5" SID="68::41">
+    <P Name="Position">[20, 101, 40, 119]</P>
+    <P Name="ZOrder">32</P>
+  </Block>
+  <Block BlockType="Inport" Name="th_dot" SID="68::42">
+    <P Name="Position">[20, 136, 40, 154]</P>
+    <P Name="ZOrder">33</P>
+    <P Name="Port">2</P>
+  </Block>
+  <Block BlockType="Inport" Name="th" SID="68::43">
+    <P Name="Position">[20, 171, 40, 189]</P>
+    <P Name="ZOrder">34</P>
+    <P Name="Port">3</P>
+  </Block>
+  <Block BlockType="Inport" Name="ball_dot" SID="68::44">
+    <P Name="Position">[20, 206, 40, 224]</P>
+    <P Name="ZOrder">35</P>
+    <P Name="Port">4</P>
+  </Block>
+  <Block BlockType="Inport" Name="ball_pos" SID="68::45">
+    <P Name="Position">[20, 246, 40, 264]</P>
+    <P Name="ZOrder">36</P>
+    <P Name="Port">5</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">, </P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="Demux" Name=" Demux " SID="68::33">
+    <PortCounts in="1" out="1"/>
+    <P Name="Position">[270, 230, 320, 270]</P>
+    <P Name="ZOrder">24</P>
+    <P Name="Outputs">1</P>
+  </Block>
+  <Block BlockType="S-Function" Name=" SFunction " SID="68::32">
+    <P Name="Tag">Stateflow S-Function 7</P>
+    <PortCounts in="5" out="3"/>
+    <P Name="Position">[180, 135, 230, 255]</P>
+    <P Name="ZOrder">23</P>
+    <P Name="FunctionName">sf_sfun</P>
+    <P Name="PortCounts">[5 3]</P>
+    <P Name="SFunctionDeploymentMode">off</P>
+    <P Name="EnableBusSupport">on</P>
+    <P Name="SFcnIsStateOwnerBlock">off</P>
+    <PortProperties>
+      <Port Type="out" Index="2">
+        <P Name="Name">vy</P>
+      </Port>
+      <Port Type="out" Index="3">
+        <P Name="Name">vx</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="Terminator" Name=" Terminator " SID="68::34">
+    <P Name="Position">[460, 241, 480, 259]</P>
+    <P Name="ZOrder">25</P>
+  </Block>
+  <Block BlockType="Outport" Name="vy" SID="68::48">
+    <P Name="Position">[460, 101, 480, 119]</P>
+    <P Name="ZOrder">39</P>
+  </Block>
+  <Block BlockType="Outport" Name="vx" SID="68::5">
+    <P Name="Position">[460, 136, 480, 154]</P>
+    <P Name="ZOrder">-5</P>
+    <P Name="Port">2</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">191</P>
+    <P Name="Src">68::41#out:1</P>
+    <P Name="Points">[101, 0; 0, 35]</P>
+    <P Name="Dst">68::32#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">192</P>
+    <P Name="Src">68::42#out:1</P>
+    <P Name="Points">[66, 0; 0, 25]</P>
+    <P Name="Dst">68::32#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">193</P>
+    <P Name="Src">68::43#out:1</P>
+    <P Name="Points">[65, 0; 0, 15]</P>
+    <P Name="Dst">68::32#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">194</P>
+    <P Name="Src">68::44#out:1</P>
+    <P Name="Points">[60, 0; 0, 5]</P>
+    <P Name="Dst">68::32#in:4</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">195</P>
+    <P Name="Src">68::45#out:1</P>
+    <P Name="Points">[65, 0; 0, -10]</P>
+    <P Name="Dst">68::32#in:5</P>
+  </Line>
+  <Line>
+    <P Name="Name">vy</P>
+    <P Name="ZOrder">196</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">68::32#out:2</P>
+    <P Name="Points">[10, 0; 0, -85]</P>
+    <P Name="Dst">68::48#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">vx</P>
+    <P Name="ZOrder">197</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">68::32#out:3</P>
+    <P Name="Points">[20, 0; 0, -90]</P>
+    <P Name="Dst">68::5#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">198</P>
+    <P Name="Src">68::33#out:1</P>
+    <P Name="Dst">68::34#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">199</P>
+    <P Name="Src">68::32#out:1</P>
+    <P Name="Points">[3, 0; 0, 95]</P>
+    <P Name="Dst">68::33#in:1</P>
+  </Line>
+</System>
+
+__MWOPC_PART_BEGIN__ /simulink/systems/system_9.xml
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[223, 338, 826, 833]</P>
+  <P Name="SIDHighWatermark">35</P>
+  <Block BlockType="Inport" Name="t" SID="9::1">
+    <P Name="Position">[20, 101, 40, 119]</P>
+    <P Name="ZOrder">-1</P>
+  </Block>
+  <Block BlockType="Inport" Name="x_p" SID="9::28">
+    <P Name="Position">[20, 136, 40, 154]</P>
+    <P Name="ZOrder">19</P>
+    <P Name="Port">2</P>
+  </Block>
+  <Block BlockType="Inport" Name="params_vec" SID="9::35">
+    <P Name="Position">[20, 171, 40, 189]</P>
+    <P Name="ZOrder">26</P>
+    <P Name="Port">3</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">params_vec</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="Inport" Name="tau_y" SID="9::30">
+    <P Name="Position">[20, 206, 40, 224]</P>
+    <P Name="ZOrder">21</P>
+    <P Name="Port">4</P>
+  </Block>
+  <Block BlockType="Demux" Name=" Demux " SID="9::33">
+    <PortCounts in="1" out="1"/>
+    <P Name="Position">[270, 230, 320, 270]</P>
+    <P Name="ZOrder">24</P>
+    <P Name="Outputs">1</P>
+  </Block>
+  <Block BlockType="S-Function" Name=" SFunction " SID="9::32">
+    <P Name="Tag">Stateflow S-Function 2</P>
+    <PortCounts in="4" out="2"/>
+    <P Name="Position">[180, 107, 230, 208]</P>
+    <P Name="ZOrder">23</P>
+    <P Name="FunctionName">sf_sfun</P>
+    <P Name="PortCounts">[4 2]</P>
+    <P Name="SFunctionDeploymentMode">off</P>
+    <P Name="EnableBusSupport">on</P>
+    <P Name="SFcnIsStateOwnerBlock">off</P>
+    <PortProperties>
+      <Port Type="out" Index="2">
+        <P Name="Name">dx_p_dt</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="Terminator" Name=" Terminator " SID="9::34">
+    <P Name="Position">[460, 241, 480, 259]</P>
+    <P Name="ZOrder">25</P>
+  </Block>
+  <Block BlockType="Outport" Name="dx_p_dt" SID="9::5">
+    <P Name="Position">[460, 101, 480, 119]</P>
+    <P Name="ZOrder">-5</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">1</P>
+    <P Name="Src">9::1#out:1</P>
+    <P Name="Dst">9::32#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">2</P>
+    <P Name="Src">9::28#out:1</P>
+    <P Name="Dst">9::32#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">3</P>
+    <P Name="Src">9::35#out:1</P>
+    <P Name="Dst">9::32#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">4</P>
+    <P Name="Src">9::30#out:1</P>
+    <P Name="Dst">9::32#in:4</P>
+  </Line>
+  <Line>
+    <P Name="Name">dx_p_dt</P>
+    <P Name="ZOrder">5</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">9::32#out:2</P>
+    <P Name="Dst">9::5#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">6</P>
+    <P Name="Src">9::33#out:1</P>
+    <P Name="Dst">9::34#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">7</P>
+    <P Name="Src">9::32#out:1</P>
+    <P Name="Dst">9::33#in:1</P>
+  </Line>
+</System>
+
+__MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[0, 0, 768, 816]</P>
+  <P Name="SystemRect">[-813.440045, 88.000000, 3176.940045, 1471.000000]</P>
+  <P Name="Open">on</P>
+  <P Name="ZoomFactor">30</P>
+  <P Name="ReportName">simulink-default.rpt</P>
+  <P Name="SIDHighWatermark">135</P>
+  <Block BlockType="Sum" Name="Add" SID="71">
+    <PortCounts in="3" out="1"/>
+    <P Name="Position">[1055, 231, 1085, 279]</P>
+    <P Name="ZOrder">91</P>
+    <P Name="IconShape">rectangular</P>
+    <P Name="Inputs">+++</P>
+  </Block>
+  <Block BlockType="Sum" Name="Add1" SID="73">
+    <PortCounts in="2" out="1"/>
+    <P Name="Position">[800, 237, 830, 268]</P>
+    <P Name="ZOrder">93</P>
+    <P Name="IconShape">rectangular</P>
+    <P Name="Inputs">+-</P>
+  </Block>
+  <Block BlockType="Sum" Name="Add2" SID="79">
+    <PortCounts in="2" out="1"/>
+    <P Name="Position">[800, 297, 830, 328]</P>
+    <P Name="ZOrder">99</P>
+    <P Name="IconShape">rectangular</P>
+    <P Name="Inputs">+-</P>
+  </Block>
+  <Block BlockType="Sum" Name="Add3" SID="80">
+    <PortCounts in="3" out="1"/>
+    <P Name="Position">[1055, 341, 1085, 389]</P>
+    <P Name="ZOrder">100</P>
+    <P Name="IconShape">rectangular</P>
+    <P Name="Inputs">+++</P>
+  </Block>
+  <Block BlockType="Sum" Name="Add4" SID="81">
+    <PortCounts in="2" out="1"/>
+    <P Name="Position">[800, 352, 830, 383]</P>
+    <P Name="ZOrder">102</P>
+    <P Name="IconShape">rectangular</P>
+    <P Name="Inputs">+-</P>
+  </Block>
+  <Block BlockType="Sum" Name="Add5" SID="82">
+    <PortCounts in="2" out="1"/>
+    <P Name="Position">[800, 407, 830, 438]</P>
+    <P Name="ZOrder">105</P>
+    <P Name="IconShape">rectangular</P>
+    <P Name="Inputs">+-</P>
+  </Block>
+  <Block BlockType="Sum" Name="Add6" SID="99">
+    <PortCounts in="2" out="1"/>
+    <P Name="Position">[1910, 1157, 1940, 1188]</P>
+    <P Name="ZOrder">117</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="NameLocation">top</P>
+    <P Name="IconShape">rectangular</P>
+    <P Name="Inputs">+-</P>
+  </Block>
+  <Block BlockType="Sum" Name="Add7" SID="100">
+    <PortCounts in="2" out="1"/>
+    <P Name="Position">[1910, 1232, 1940, 1263]</P>
+    <P Name="ZOrder">118</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="NameLocation">top</P>
+    <P Name="IconShape">rectangular</P>
+    <P Name="Inputs">+-</P>
+  </Block>
+  <Block BlockType="Constant" Name="Constant" SID="86">
+    <P Name="Position">[1085, 460, 1115, 490]</P>
+    <P Name="ZOrder">106</P>
+    <P Name="Value">0</P>
+  </Block>
+  <Block BlockType="Demux" Name="Demux" SID="74">
+    <PortCounts in="1" out="4"/>
+    <P Name="Position">[1575, 256, 1580, 294]</P>
+    <P Name="ZOrder">94</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="Name">yk</P>
+      </Port>
+      <Port Type="out" Index="2">
+        <P Name="Name">thetax</P>
+      </Port>
+      <Port Type="out" Index="3">
+        <P Name="Name">yk_dot</P>
+      </Port>
+      <Port Type="out" Index="4">
+        <P Name="Name">thetax_dot</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="Demux" Name="Demux1" SID="75">
+    <PortCounts in="1" out="4"/>
+    <P Name="Position">[1560, 401, 1565, 439]</P>
+    <P Name="ZOrder">95</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="Name">xk</P>
+      </Port>
+      <Port Type="out" Index="2">
+        <P Name="Name">thetay</P>
+      </Port>
+      <Port Type="out" Index="3">
+        <P Name="Name">xk_dot</P>
+      </Port>
+      <Port Type="out" Index="4">
+        <P Name="Name">thetay_dot</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="Demux" Name="Demux2" SID="76">
+    <PortCounts in="1" out="2"/>
+    <P Name="Position">[1520, 546, 1525, 584]</P>
+    <P Name="ZOrder">96</P>
+    <P Name="Outputs">2</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="Name">Thetaz</P>
+      </Port>
+      <Port Type="out" Index="2">
+        <P Name="Name">thetaz_dot</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="Integrator" Name="Integrator" SID="77">
+    <PortCounts in="1" out="1"/>
+    <P Name="Position">[590, 230, 620, 260]</P>
+    <P Name="ZOrder">97</P>
+  </Block>
+  <Block BlockType="Integrator" Name="Integrator1" SID="83">
+    <PortCounts in="1" out="1"/>
+    <P Name="Position">[605, 340, 635, 370]</P>
+    <P Name="ZOrder">103</P>
+  </Block>
+  <Block BlockType="Integrator" Name="Integrator2" SID="134">
+    <PortCounts in="1" out="1"/>
+    <P Name="Position">[2390, 455, 2420, 485]</P>
+    <P Name="ZOrder">150</P>
+  </Block>
+  <Block BlockType="Gain" Name="K_ip1" SID="84">
+    <P Name="Position">[900, 355, 930, 385]</P>
+    <P Name="ZOrder">101</P>
+    <P Name="Gain">36</P>
+  </Block>
+  <Block BlockType="Gain" Name="K_ir" SID="72">
+    <P Name="Position">[900, 240, 930, 270]</P>
+    <P Name="ZOrder">92</P>
+    <P Name="Gain">36</P>
+  </Block>
+  <Block BlockType="Gain" Name="K_pp1" SID="85">
+    <P Name="Position">[900, 410, 930, 440]</P>
+    <P Name="ZOrder">104</P>
+    <P Name="Gain">6</P>
+  </Block>
+  <Block BlockType="Gain" Name="K_pr" SID="78">
+    <P Name="Position">[900, 300, 930, 330]</P>
+    <P Name="ZOrder">98</P>
+    <P Name="Gain">6</P>
+  </Block>
+  <Block BlockType="SubSystem" Name="MATLAB Function1" SID="128">
+    <PortCounts in="5" out="2"/>
+    <P Name="Position">[2310, 517, 2535, 933]</P>
+    <P Name="ZOrder">144</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="NameLocation">top</P>
+    <P Name="ErrorFcn">Stateflow.Translate.translate</P>
+    <P Name="PermitHierarchicalResolution">ExplicitOnly</P>
+    <P Name="TreatAsAtomicUnit">on</P>
+    <P Name="SFBlockType">MATLAB Function</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">vy</P>
+      </Port>
+      <Port Type="out" Index="2">
+        <P Name="PropagatedSignals">vx</P>
+      </Port>
+    </PortProperties>
+    <System Ref="system_128"/>
+  </Block>
+  <Block BlockType="SubSystem" Name="MATLAB Function2" SID="68">
+    <PortCounts in="5" out="2"/>
+    <P Name="Position">[1220, 802, 1445, 1218]</P>
+    <P Name="ZOrder">88</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="NameLocation">top</P>
+    <P Name="ErrorFcn">Stateflow.Translate.translate</P>
+    <P Name="PermitHierarchicalResolution">ExplicitOnly</P>
+    <P Name="TreatAsAtomicUnit">on</P>
+    <P Name="SFBlockType">MATLAB Function</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">vy</P>
+      </Port>
+      <Port Type="out" Index="2">
+        <P Name="PropagatedSignals">vx</P>
+      </Port>
+    </PortProperties>
+    <System Ref="system_68"/>
+  </Block>
+  <Block BlockType="SubSystem" Name="MATLAB Function4" SID="13">
+    <PortCounts out="1"/>
+    <P Name="Position">[960, 564, 1020, 606]</P>
+    <P Name="ZOrder">73</P>
+    <P Name="ErrorFcn">Stateflow.Translate.translate</P>
+    <P Name="PermitHierarchicalResolution">ExplicitOnly</P>
+    <P Name="TreatAsAtomicUnit">on</P>
+    <P Name="SFBlockType">MATLAB Function</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">params_vec</P>
+      </Port>
+    </PortProperties>
+    <System Ref="system_13"/>
+  </Block>
+  <Block BlockType="Mux" Name="Mux" SID="69">
+    <PortCounts in="2" out="1"/>
+    <P Name="Position">[1585, 886, 1590, 924]</P>
+    <P Name="ZOrder">89</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="NameLocation">top</P>
+    <P Name="Inputs">2</P>
+    <P Name="DisplayOption">bar</P>
+  </Block>
+  <Block BlockType="Mux" Name="Mux1" SID="88">
+    <PortCounts in="2" out="1"/>
+    <P Name="Position">[1585, 956, 1590, 994]</P>
+    <P Name="ZOrder">108</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="NameLocation">top</P>
+    <P Name="Inputs">2</P>
+    <P Name="DisplayOption">bar</P>
+  </Block>
+  <Block BlockType="Mux" Name="Mux2" SID="89">
+    <PortCounts in="2" out="1"/>
+    <P Name="Position">[1585, 1026, 1590, 1064]</P>
+    <P Name="ZOrder">109</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="NameLocation">top</P>
+    <P Name="Inputs">2</P>
+    <P Name="DisplayOption">bar</P>
+  </Block>
+  <Block BlockType="Mux" Name="Mux3" SID="90">
+    <PortCounts in="2" out="1"/>
+    <P Name="Position">[1585, 1096, 1590, 1134]</P>
+    <P Name="ZOrder">110</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="NameLocation">top</P>
+    <P Name="Inputs">2</P>
+    <P Name="DisplayOption">bar</P>
+  </Block>
+  <Block BlockType="Mux" Name="Mux4" SID="91">
+    <PortCounts in="2" out="1"/>
+    <P Name="Position">[1585, 1166, 1590, 1204]</P>
+    <P Name="ZOrder">111</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="NameLocation">top</P>
+    <P Name="Inputs">2</P>
+    <P Name="DisplayOption">bar</P>
+  </Block>
+  <Block BlockType="Mux" Name="Mux5" SID="129">
+    <PortCounts in="2" out="1"/>
+    <P Name="Position">[2675, 601, 2680, 639]</P>
+    <P Name="ZOrder">145</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="NameLocation">top</P>
+    <P Name="Inputs">2</P>
+    <P Name="DisplayOption">bar</P>
+  </Block>
+  <Block BlockType="Mux" Name="Mux6" SID="130">
+    <PortCounts in="2" out="1"/>
+    <P Name="Position">[2675, 671, 2680, 709]</P>
+    <P Name="ZOrder">146</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="NameLocation">top</P>
+    <P Name="Inputs">2</P>
+    <P Name="DisplayOption">bar</P>
+  </Block>
+  <Block BlockType="Mux" Name="Mux7" SID="131">
+    <PortCounts in="2" out="1"/>
+    <P Name="Position">[2675, 741, 2680, 779]</P>
+    <P Name="ZOrder">147</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="NameLocation">top</P>
+    <P Name="Inputs">2</P>
+    <P Name="DisplayOption">bar</P>
+  </Block>
+  <Block BlockType="Mux" Name="Mux8" SID="132">
+    <PortCounts in="2" out="1"/>
+    <P Name="Position">[2675, 811, 2680, 849]</P>
+    <P Name="ZOrder">148</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="NameLocation">top</P>
+    <P Name="Inputs">2</P>
+    <P Name="DisplayOption">bar</P>
+  </Block>
+  <Block BlockType="Mux" Name="Mux9" SID="133">
+    <PortCounts in="2" out="1"/>
+    <P Name="Position">[2675, 881, 2680, 919]</P>
+    <P Name="ZOrder">149</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="NameLocation">top</P>
+    <P Name="Inputs">2</P>
+    <P Name="DisplayOption">bar</P>
+  </Block>
+  <Block BlockType="Scope" Name="Scope2" SID="124">
+    <PortCounts in="1"/>
+    <P Name="Position">[1755, 1338, 1785, 1372]</P>
+    <P Name="ZOrder">142</P>
+    <P Name="ScopeSpecificationString">Simulink.scopes.TimeScopeBlockCfg(&apos;CurrentConfiguration&apos;, extmgr.ConfigurationSet(extmgr.Configuration(&apos;Core&apos;,&apos;General UI&apos;,true),extmgr.Configuration(&apos;Core&apos;,&apos;Source UI&apos;,true),extmgr.Configuration(&apos;Sources&apos;,&apos;WiredSimulink&apos;,true,&apos;DataLoggingVariableName&apos;,&apos;ScopeData1&apos;),extmgr.Configuration(&apos;Visuals&apos;,&apos;Time Domain&apos;,true,&apos;SerializedDisplays&apos;,{struct(&apos;MinYLimReal&apos;,&apos;-2.60137&apos;,&apos;MaxYLimReal&apos;,&apos;2.57915&apos;,&apos;YLabelReal&apos;,&apos;&apos;,&apos;MinYLimMag&apos;,&apos;0.00000&apos;,&apos;MaxYLimMag&apos;,&apos;2.60137&apos;,&apos;LegendVisibility&apos;,&apos;off&apos;,&apos;XGrid&apos;,true,&apos;YGrid&apos;,true,&apos;PlotMagPhase&apos;,false,&apos;AxesColor&apos;,[0 0 0],&apos;AxesTickColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ColorOrder&apos;,[1 0.909803921568627 0.392156862745098;0.149019607843137 0.549019607843137 0.866666666666667;0.96078431372549 0.466666666666667 0.16078431372549;0.286274509803922 0.858823529411765 0.250980392156863;0.752941176470588 0.36078431372549 0.984313725490196;0.423529411764706 0.956862745098039 1;0.949019607843137 0.403921568627451 0.772549019607843],&apos;Title&apos;,&apos;%&lt;SignalLabel&gt;&apos;,&apos;LinePropertiesCache&apos;,{{}},&apos;UserDefinedChannelNames&apos;,{{}},&apos;NumLines&apos;,1,&apos;LineNames&apos;,{{&apos;Add6&apos;}},&apos;ShowContent&apos;,true,&apos;Placement&apos;,1)},&apos;DisplayPropertyDefaults&apos;,struct(&apos;MinYLimReal&apos;,&apos;-2.60137&apos;,&apos;MaxYLimReal&apos;,&apos;2.57915&apos;,&apos;YLabelReal&apos;,&apos;&apos;,&apos;MinYLimMag&apos;,&apos;0.00000&apos;,&apos;MaxYLimMag&apos;,&apos;2.60137&apos;,&apos;LegendVisibility&apos;,&apos;off&apos;,&apos;XGrid&apos;,true,&apos;YGrid&apos;,true,&apos;PlotMagPhase&apos;,false,&apos;AxesColor&apos;,[0 0 0],&apos;AxesTickColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ColorOrder&apos;,[0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.392156862745098 0.831372549019608 0.0745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863])),extmgr.Configuration(&apos;Tools&apos;,&apos;Plot Navigation&apos;,true,&apos;OnceAtStop&apos;,false,&apos;PreviousZoomMode&apos;,&apos;ZoomX&apos;,&apos;PreviousAutoscale&apos;,&apos;XY&apos;),extmgr.Configuration(&apos;Tools&apos;,&apos;Measurements&apos;,true,&apos;Version&apos;,&apos;2024b&apos;)),&apos;Version&apos;,&apos;2024b&apos;,&apos;Position&apos;,[1 49 1536 740.8])</P>
+    <P Name="NumInputPorts">1</P>
+    <P Name="Floating">off</P>
+  </Block>
+  <Block BlockType="Scope" Name="Scope3" SID="125">
+    <PortCounts in="1"/>
+    <P Name="Position">[1760, 1263, 1790, 1297]</P>
+    <P Name="ZOrder">143</P>
+    <P Name="ScopeSpecificationString">Simulink.scopes.TimeScopeBlockCfg(&apos;CurrentConfiguration&apos;, extmgr.ConfigurationSet(extmgr.Configuration(&apos;Core&apos;,&apos;General UI&apos;,true),extmgr.Configuration(&apos;Core&apos;,&apos;Source UI&apos;,true),extmgr.Configuration(&apos;Sources&apos;,&apos;WiredSimulink&apos;,true,&apos;DataLoggingVariableName&apos;,&apos;ScopeData2&apos;),extmgr.Configuration(&apos;Visuals&apos;,&apos;Time Domain&apos;,true,&apos;SerializedDisplays&apos;,{struct(&apos;MinYLimReal&apos;,&apos;-1734.20221&apos;,&apos;MaxYLimReal&apos;,&apos;427.18444&apos;,&apos;YLabelReal&apos;,&apos;&apos;,&apos;MinYLimMag&apos;,&apos;  0.00000&apos;,&apos;MaxYLimMag&apos;,&apos;1734.20221&apos;,&apos;LegendVisibility&apos;,&apos;off&apos;,&apos;XGrid&apos;,true,&apos;YGrid&apos;,true,&apos;PlotMagPhase&apos;,false,&apos;AxesColor&apos;,[0 0 0],&apos;AxesTickColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ColorOrder&apos;,[1 0.909803921568627 0.392156862745098;0.149019607843137 0.549019607843137 0.866666666666667;0.96078431372549 0.466666666666667 0.16078431372549;0.286274509803922 0.858823529411765 0.250980392156863;0.752941176470588 0.36078431372549 0.984313725490196;0.423529411764706 0.956862745098039 1;0.949019607843137 0.403921568627451 0.772549019607843],&apos;Title&apos;,&apos;%&lt;SignalLabel&gt;&apos;,&apos;LinePropertiesCache&apos;,{{}},&apos;UserDefinedChannelNames&apos;,{{}},&apos;NumLines&apos;,1,&apos;LineNames&apos;,{{&apos;Add7&apos;}},&apos;ShowContent&apos;,true,&apos;Placement&apos;,1)},&apos;DisplayPropertyDefaults&apos;,struct(&apos;MinYLimReal&apos;,&apos;-1734.20221&apos;,&apos;MaxYLimReal&apos;,&apos;427.18444&apos;,&apos;YLabelReal&apos;,&apos;&apos;,&apos;MinYLimMag&apos;,&apos;  0.00000&apos;,&apos;MaxYLimMag&apos;,&apos;1734.20221&apos;,&apos;LegendVisibility&apos;,&apos;off&apos;,&apos;XGrid&apos;,true,&apos;YGrid&apos;,true,&apos;PlotMagPhase&apos;,false,&apos;AxesColor&apos;,[0 0 0],&apos;AxesTickColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ColorOrder&apos;,[0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.392156862745098 0.831372549019608 0.0745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863])),extmgr.Configuration(&apos;Tools&apos;,&apos;Plot Navigation&apos;,true),extmgr.Configuration(&apos;Tools&apos;,&apos;Measurements&apos;,true,&apos;Version&apos;,&apos;2024b&apos;)),&apos;Version&apos;,&apos;2024b&apos;,&apos;Position&apos;,[1 49 1536 740.8])</P>
+    <P Name="NumInputPorts">1</P>
+    <P Name="Floating">off</P>
+  </Block>
+  <Block BlockType="SubSystem" Name="Subsystem" SID="22">
+    <PortCounts in="4" out="3"/>
+    <P Name="Position">[1185, 201, 1475, 639]</P>
+    <P Name="ZOrder">58</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">dx_r_dt</P>
+      </Port>
+      <Port Type="out" Index="2">
+        <P Name="PropagatedSignals">dx_p_dt</P>
+      </Port>
+      <Port Type="out" Index="3">
+        <P Name="PropagatedSignals">dx_z_dt</P>
+      </Port>
+    </PortProperties>
+    <System Ref="system_22"/>
+  </Block>
+  <Block BlockType="Record" Name="XY Graph" SID="87">
+    <PortCounts in="2"/>
+    <P Name="Position">[1840, 382, 1875, 413]</P>
+    <P Name="ZOrder">107</P>
+    <P Name="NumPorts" Ref="bdmxdata:NumPorts_87"/>
+    <P Name="FileSettingsInternal">{&quot;entries&quot;:[{&quot;content&quot;:{&quot;excelSettings&quot;:{&quot;content&quot;:{},&quot;type&quot;:&quot;Streamout.ExcelSettings&quot;}},&quot;type&quot;:&quot;Streamout.FileSettingStorage&quot;,&quot;uuid&quot;:&quot;&quot;}],&quot;packageUris&quot;:[&quot;http:\/\/schema.mathworks.com\/mf0\/streamout_blocks\/R2020a&quot;],&quot;version&quot;:&quot;1.0&quot;}</P>
+    <P Name="FrameSettings" Ref="bdmxdata:FrameSettings_87"/>
+    <P Name="Layout">[1 1]</P>
+    <P Name="SignalsInternal">{&quot;entries&quot;:[{&quot;content&quot;:{&quot;signals&quot;:[{&quot;content&quot;:{&quot;blockPath&quot;:[],&quot;dimensions&quot;:[1,1],&quot;domain&quot;:&quot;&quot;,&quot;lineColor&quot;:&quot;#a2142f&quot;,&quot;plots&quot;:[ 1 ],&quot;port&quot;:1,&quot;signalID&quot;:1,&quot;signalName&quot;:&quot;yk&quot;},&quot;type&quot;:&quot;RecordBlkView.Signal&quot;,&quot;uuid&quot;:&quot;&quot;},{&quot;content&quot;:{&quot;blockPath&quot;:[],&quot;dimensions&quot;:[1,1],&quot;domain&quot;:&quot;&quot;,&quot;lineColor&quot;:&quot;#139fff&quot;,&quot;plots&quot;:[ 1 ],&quot;port&quot;:2,&quot;signalID&quot;:2,&quot;signalName&quot;:&quot;xk&quot;},&quot;type&quot;:&quot;RecordBlkView.Signal&quot;,&quot;uuid&quot;:&quot;&quot;}]},&quot;type&quot;:&quot;RecordBlkView.InputSignals&quot;,&quot;uuid&quot;:&quot;&quot;}],&quot;packageUris&quot;:[&quot;http:\/\/schema.mathworks.com\/mf0\/streamout_blocks\/R2020a&quot;],&quot;version&quot;:&quot;1.0&quot;}</P>
+    <Object PropName="PlotPreferences" ObjectID="1" ClassName="Simulink.record.internal.PlotPreferences">
+      <Object PropName="Time" ObjectID="2" ClassName="Simulink.record.internal.TimePlotPreferences">
+        <P Name="TicksColor" Class="double">[0.0, 0.0, 0.0]</P>
+        <P Name="TicksPosition" Class="char">Outside</P>
+        <P Name="TickLabels" Class="char">All</P>
+        <P Name="PlotColor" Class="double">[1.0, 1.0, 1.0]</P>
+        <P Name="GridColor" Class="double">[0.81568627450980391, 0.82352941176470584, 0.82745098039215681]</P>
+        <P Name="LegendPosition" Class="char">TopLeft</P>
+        <P Name="Markers" Class="char">Hide</P>
+        <P Name="GridLines" Class="char">All</P>
+        <P Name="PlotBorder" Class="char">Show</P>
+        <P Name="UpdateMode" Class="char">Wrap</P>
+        <P Name="TimeSpan" Class="char">Auto</P>
+        <P Name="TLimits" Class="double">[0.0, 10.0]</P>
+        <P Name="YLimits" Class="double">[-3.0, 3.0]</P>
+        <P Name="ScaleAtStop" Class="logical">1</P>
+      </Object>
+      <Object PropName="XY" ObjectID="3" ClassName="Simulink.record.internal.XYPlotPreferences">
+        <P Name="TicksColor" Class="double">[0.0, 0.0, 0.0]</P>
+        <P Name="PlotColor" Class="double">[1.0, 1.0, 1.0]</P>
+        <P Name="GridColor" Class="double">[0.81568627450980391, 0.82352941176470584, 0.82745098039215681]</P>
+        <P Name="Line" Class="char">Hide</P>
+        <P Name="LineColor" Class="char">YColor</P>
+        <P Name="Markers" Class="char">Show</P>
+        <P Name="MarkerBorder" Class="char">XColor</P>
+        <P Name="MarkerFill" Class="char">YColor</P>
+        <P Name="MarkerSize" Class="double">3.0</P>
+        <P Name="TrendLine" Class="char">Hide</P>
+        <P Name="TrendLineColor" Class="double">[1.0, 0.0, 0.0]</P>
+        <P Name="TrendLineWeight" Class="double">2.5</P>
+        <P Name="TrendLineType" Class="char">Linear</P>
+        <P Name="PolynomialOrder" Class="double">3.0</P>
+        <P Name="GridLines" Class="char">On</P>
+        <Object PropName="LocalXYSettings" ObjectID="4" ClassName="Simulink.record.internal.LocalXYSettings">
+          <P Name="SubPlotID" Class="int32">1</P>
+          <P Name="isAutoLimits" Class="logical">1</P>
+          <P Name="limits" Class="double">[-22.4, 24.7, -19.6, 21.8]</P>
+        </Object>
+      </Object>
+      <Object PropName="Map" ObjectID="5" ClassName="Simulink.record.internal.MapPlotPreferences">
+        <P Name="Type" Class="char">Street</P>
+      </Object>
+      <P Name="Sparklines" Class="double">[]</P>
+    </Object>
+    <P Name="CanvasColor" Ref="bdmxdata:CanvasColor_87"/>
+    <P Name="VisualizationBindings">{&quot;xyplotplugin&quot;:{&quot;info&quot;:[{&quot;series&quot;:[{&quot;bindingParametersList&quot;:[{&quot;parameter&quot;:&quot;Y-Axis&quot;,&quot;signalID&quot;:1,&quot;signalName&quot;:&quot;yk&quot;}],&quot;seriesID&quot;:0}],&quot;subplotID&quot;:1}]}}</P>
+    <P Name="CompatibilityTag">XY</P>
+  </Block>
+  <Block BlockType="Constant" Name="xk" SID="94">
+    <P Name="Position">[2060, 1240, 2090, 1270]</P>
+    <P Name="ZOrder">114</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="NameLocation">top</P>
+  </Block>
+  <Block BlockType="Constant" Name="yk" SID="95">
+    <P Name="Position">[2060, 1165, 2090, 1195]</P>
+    <P Name="ZOrder">115</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="NameLocation">top</P>
+    <P Name="Value">0.1</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">292</P>
+    <P Name="Src">22#out:3</P>
+    <P Name="Dst">76#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">196</P>
+    <P Name="Src">13#out:1</P>
+    <P Name="Dst">22#in:4</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">209</P>
+    <P Name="Src">69#out:1</P>
+    <P Name="Points">[-19, 0; 0, -65]</P>
+    <P Name="Dst">68#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">316</P>
+    <P Name="Src">83#out:1</P>
+    <P Name="Points">[72, 0; 0, 5]</P>
+    <Branch>
+      <P Name="ZOrder">342</P>
+      <P Name="Points">[0, 391; 912, 0; 0, 164]</P>
+      <P Name="Dst">69#in:2</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">338</P>
+      <P Name="Dst">81#in:1</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">272</P>
+    <P Name="Src">71#out:1</P>
+    <P Name="Dst">22#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">275</P>
+    <P Name="Src">72#out:1</P>
+    <P Name="Dst">71#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">299</P>
+    <P Name="Src">73#out:1</P>
+    <P Name="Dst">72#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">279</P>
+    <P Name="Src">22#out:1</P>
+    <P Name="Dst">74#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">280</P>
+    <P Name="Src">22#out:2</P>
+    <P Name="Dst">75#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">yk</P>
+    <P Name="ZOrder">300</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">74#out:1</P>
+    <P Name="Points">[190, 0; 0, 130]</P>
+    <Branch>
+      <P Name="ZOrder">334</P>
+      <P Name="Points">[0, 330]</P>
+      <Branch>
+        <P Name="ZOrder">365</P>
+        <P Name="Points">[-1009, 0; 0, -460]</P>
+        <P Name="Dst">73#in:2</P>
+      </Branch>
+      <Branch>
+        <P Name="ZOrder">357</P>
+        <P Name="Points">[0, 55; -5, 0; 0, 324; 194, 0; 0, 66]</P>
+        <P Name="Dst">99#in:1</P>
+      </Branch>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">332</P>
+      <P Name="Dst">87#in:1</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="Name">thetax</P>
+    <P Name="ZOrder">350</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">74#out:2</P>
+    <P Name="Points">[45, 0; 0, 765]</P>
+    <P Name="Dst">89#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">yk_dot</P>
+    <P Name="ZOrder">306</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">74#out:3</P>
+    <P Name="Points">[160, 0; 0, 428]</P>
+    <Branch>
+      <P Name="ZOrder">353</P>
+      <P Name="Points">[0, 67; -5, 0; 0, 330]</P>
+      <P Name="Dst">90#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">352</P>
+      <P Name="Points">[-1040, 0; 0, -388]</P>
+      <P Name="Dst">79#in:2</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="Name">thetax_dot</P>
+    <P Name="ZOrder">345</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">74#out:4</P>
+    <P Name="Points">[51, 0; 0, 675]</P>
+    <P Name="Dst">88#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">thetay</P>
+    <P Name="ZOrder">351</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">75#out:2</P>
+    <P Name="Points">[78, 0; 0, 640]</P>
+    <P Name="Dst">89#in:2</P>
+  </Line>
+  <Line>
+    <P Name="Name">xk_dot</P>
+    <P Name="ZOrder">323</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">75#out:3</P>
+    <P Name="Points">[126, 0; 0, 238]</P>
+    <Branch>
+      <P Name="ZOrder">359</P>
+      <P Name="Points">[0, 112; -5, 0; 0, 350]</P>
+      <P Name="Dst">90#in:2</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">358</P>
+      <P Name="Points">[-906, 0; 0, -233]</P>
+      <P Name="Dst">82#in:2</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="Name">thetay_dot</P>
+    <P Name="ZOrder">346</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">75#out:4</P>
+    <P Name="Points">[48, 0; 0, 550]</P>
+    <P Name="Dst">88#in:2</P>
+  </Line>
+  <Line>
+    <P Name="Name">Thetaz</P>
+    <P Name="ZOrder">293</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">76#out:1</P>
+    <P Name="Points">[8, 0; 0, -7]</P>
+  </Line>
+  <Line>
+    <P Name="Name">thetaz_dot</P>
+    <P Name="ZOrder">294</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">76#out:2</P>
+    <P Name="Points">[27, 0; 0, 18]</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">301</P>
+    <P Name="Src">77#out:1</P>
+    <P Name="Points">[114, 0]</P>
+    <Branch>
+      <P Name="ZOrder">337</P>
+      <P Name="Points">[0, 537; 873, 0; 0, 113]</P>
+      <P Name="Dst">69#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">336</P>
+      <P Name="Dst">73#in:1</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">302</P>
+    <P Name="Src">78#out:1</P>
+    <P Name="Points">[58, 0; 0, -45]</P>
+    <P Name="Dst">71#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">303</P>
+    <P Name="Src">79#out:1</P>
+    <P Name="Dst">78#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">xk</P>
+    <P Name="ZOrder">319</P>
+    <P Name="Labels">[1, 0]</P>
+    <P Name="Src">75#out:1</P>
+    <P Name="Points">[149, 0]</P>
+    <Branch>
+      <P Name="ZOrder">335</P>
+      <P Name="Points">[0, 278]</P>
+      <Branch>
+        <P Name="ZOrder">361</P>
+        <P Name="Points">[0, 92; -5, 0; 0, 431; 250, 0; 0, 34]</P>
+        <P Name="Dst">100#in:1</P>
+      </Branch>
+      <Branch>
+        <P Name="ZOrder">360</P>
+        <P Name="Points">[-941, 0; 0, -308]</P>
+        <P Name="Dst">81#in:2</P>
+      </Branch>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">329</P>
+      <P Name="Dst">87#in:2</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">312</P>
+    <P Name="Src">81#out:1</P>
+    <P Name="Dst">84#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">313</P>
+    <P Name="Src">85#out:1</P>
+    <P Name="Points">[58, 0; 0, -45]</P>
+    <P Name="Dst">80#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">314</P>
+    <P Name="Src">84#out:1</P>
+    <P Name="Points">[58, 0; 0, -5]</P>
+    <P Name="Dst">80#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">318</P>
+    <P Name="Src">80#out:1</P>
+    <P Name="Dst">22#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">317</P>
+    <P Name="Src">82#out:1</P>
+    <P Name="Dst">85#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">327</P>
+    <P Name="Src">86#out:1</P>
+    <P Name="Dst">22#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">344</P>
+    <P Name="Src">88#out:1</P>
+    <P Name="Points">[-39, 0; 0, -50]</P>
+    <P Name="Dst">68#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">347</P>
+    <P Name="Src">89#out:1</P>
+    <P Name="Points">[-59, 0; 0, -35]</P>
+    <P Name="Dst">68#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">348</P>
+    <P Name="Src">90#out:1</P>
+    <P Name="Points">[-80, 0; 0, -20]</P>
+    <P Name="Dst">68#in:4</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">349</P>
+    <P Name="Src">91#out:1</P>
+    <P Name="Points">[-100, 0; 0, -5]</P>
+    <P Name="Dst">68#in:5</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">368</P>
+    <P Name="Src">99#out:1</P>
+    <P Name="Points">[-246, 0]</P>
+    <Branch>
+      <P Name="ZOrder">472</P>
+      <P Name="Points">[0, 180]</P>
+      <P Name="Dst">124#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">471</P>
+      <P Name="Dst">91#in:1</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">369</P>
+    <P Name="Src">95#out:1</P>
+    <P Name="Dst">99#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">372</P>
+    <P Name="Src">100#out:1</P>
+    <P Name="Points">[-196, 0]</P>
+    <Branch>
+      <P Name="ZOrder">475</P>
+      <P Name="Points">[0, 30]</P>
+      <P Name="Dst">125#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">474</P>
+      <P Name="Points">[-57, 0; 0, -55]</P>
+      <P Name="Dst">91#in:2</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">373</P>
+    <P Name="Src">94#out:1</P>
+    <P Name="Dst">100#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">469</P>
+    <P Name="Src">68#out:1</P>
+    <P Name="Points">[-625, 0; 0, -600; 5, 0]</P>
+    <Branch>
+      <P Name="ZOrder">378</P>
+      <P Name="Dst">79#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">324</P>
+      <P Name="Points">[0, -7; -10, 0; 0, -53]</P>
+      <P Name="Dst">77#in:1</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">470</P>
+    <P Name="Src">68#out:2</P>
+    <P Name="Points">[-639, 0; 0, -700; 5, 0]</P>
+    <Branch>
+      <P Name="ZOrder">309</P>
+      <P Name="Dst">82#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">308</P>
+      <P Name="Points">[0, -60]</P>
+      <P Name="Dst">83#in:1</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">504</P>
+    <P Name="Src">128#out:1</P>
+    <P Name="Points">[-19, 0; 0, -127; 422, 0; 0, 117]</P>
+    <P Name="Dst">129#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">499</P>
+    <P Name="Src">129#out:1</P>
+    <P Name="Points">[-19, 0; 0, -65]</P>
+    <P Name="Dst">128#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">501</P>
+    <P Name="Src">131#out:1</P>
+    <P Name="Points">[-59, 0; 0, -35]</P>
+    <P Name="Dst">128#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">500</P>
+    <P Name="Src">132#out:1</P>
+    <P Name="Points">[-80, 0; 0, -20]</P>
+    <P Name="Dst">128#in:4</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">502</P>
+    <P Name="Src">130#out:1</P>
+    <P Name="Points">[-39, 0; 0, -50]</P>
+    <P Name="Dst">128#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">503</P>
+    <P Name="Src">133#out:1</P>
+    <P Name="Points">[-100, 0; 0, -5]</P>
+    <P Name="Dst">128#in:5</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">505</P>
+    <P Name="Src">128#out:2</P>
+    <P Name="Points">[-45, 0; 0, -360]</P>
+    <P Name="Dst">134#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">508</P>
+    <P Name="Points">[2820, 680]</P>
+    <P Name="Dst">130#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">509</P>
+    <P Name="Points">[2821, 700]</P>
+    <P Name="Dst">130#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">517</P>
+    <P Name="Points">[2815, 750]</P>
+    <P Name="Dst">131#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">518</P>
+    <P Name="Points">[2816, 770]</P>
+    <P Name="Dst">131#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">512</P>
+    <P Name="Points">[2795, 820]</P>
+    <P Name="Dst">132#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">513</P>
+    <P Name="Points">[2791, 840]</P>
+    <P Name="Dst">132#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">516</P>
+    <P Name="Points">[2792, 890; 0, 0; -112, 0]</P>
+    <P Name="Dst">133#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">515</P>
+    <P Name="Points">[2790, 910]</P>
+    <P Name="Dst">133#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">519</P>
+    <P Name="Src">134#out:1</P>
+    <P Name="Points">[308, 0; 0, 160]</P>
+    <P Name="Dst">129#in:2</P>
+  </Line>
+</System>
+
+__MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
+<?xml version="1.0" encoding="utf-8"?>
+<WindowsInfo>
+  <Object PropName="BdWindowsInfo" ObjectID="1" ClassName="Simulink.BDWindowsInfo">
+    <Object PropName="WindowsInfo" ObjectID="2" ClassName="Simulink.WindowInfo">
+      <P Name="IsActive" Class="logical">1</P>
+      <P Name="Location" Class="double">[0.0, 0.0, 768.0, 816.0]</P>
+      <Object PropName="ModelBrowserInfo" ObjectID="3" ClassName="Simulink.ModelBrowserInfo">
+        <P Name="Visible" Class="logical">1</P>
+        <P Name="DockPosition" Class="char">Left</P>
+        <P Name="Width" Class="int32">50</P>
+        <P Name="Height" Class="int32">50</P>
+        <P Name="Filter" Class="int32">9</P>
+        <P Name="Minimized" Class="char">On</P>
+      </Object>
+      <Object PropName="ExplorerBarInfo" ObjectID="4" ClassName="Simulink.ExplorerBarInfo">
+        <P Name="Visible" Class="logical">1</P>
+      </Object>
+      <Array PropName="EditorsInfo" Type="Simulink.EditorInfo" Dimension="1*11">
+        <Object ObjectID="5">
+          <P Name="IsActive" Class="logical">1</P>
+          <P Name="IsTabbed" Class="logical">1</P>
+          <P Name="ViewObjType" Class="char">SimulinkTopLevel</P>
+          <P Name="LoadSaveID" Class="char">0</P>
+          <P Name="Extents" Class="double">[880.0, 731.0]</P>
+          <P Name="ZoomFactor" Class="double">0.29999999999999993</P>
+          <P Name="Offset" Class="double">[-213.75000000000023, -317.00000000000023]</P>
+          <P Name="SceneRectInView" Class="double">[-213.75000000000023, -317.00000000000023, 2346.6666666666674, 1949.3333333333339]</P>
+        </Object>
+        <Object ObjectID="6">
+          <P Name="IsActive" Class="logical">0</P>
+          <P Name="IsTabbed" Class="logical">1</P>
+          <P Name="ViewObjType" Class="char">SimulinkSubsys</P>
+          <P Name="LoadSaveID" Class="char">22</P>
+          <P Name="Extents" Class="double">[880.0, 731.0]</P>
+          <P Name="ZoomFactor" Class="double">0.59999999999999987</P>
+          <P Name="Offset" Class="double">[26.30770259120159, -214.49470906523791]</P>
+          <P Name="SceneRectInView" Class="double">[26.30770259120159, -214.49470906523791, 1173.3333333333337, 974.666666666667]</P>
+        </Object>
+        <Object ObjectID="7">
+          <P Name="IsActive" Class="logical">0</P>
+          <P Name="IsTabbed" Class="logical">0</P>
+          <P Name="ViewObjType" Class="char">StudioAdapterBlock</P>
+          <P Name="LoadSaveID" Class="char">128</P>
+          <P Name="Extents" Class="double">[1707.0, 741.0]</P>
+          <P Name="ZoomFactor" Class="double">1.0</P>
+          <P Name="Offset" Class="double">[0.0, 0.0]</P>
+          <P Name="SceneRectInView" Class="double">[0.0, 0.0, 0.0, 0.0]</P>
+        </Object>
+        <Object ObjectID="8">
+          <P Name="IsActive" Class="logical">0</P>
+          <P Name="IsTabbed" Class="logical">0</P>
+          <P Name="ViewObjType" Class="char">StudioAdapterBlock</P>
+          <P Name="LoadSaveID" Class="char">68</P>
+          <P Name="Extents" Class="double">[745.0, 731.0]</P>
+          <P Name="ZoomFactor" Class="double">1.0</P>
+          <P Name="Offset" Class="double">[0.0, 0.0]</P>
+          <P Name="SceneRectInView" Class="double">[0.0, 0.0, 0.0, 0.0]</P>
+        </Object>
+        <Object ObjectID="9">
+          <P Name="IsActive" Class="logical">0</P>
+          <P Name="IsTabbed" Class="logical">0</P>
+          <P Name="ViewObjType" Class="char">StudioAdapterBlock</P>
+          <P Name="LoadSaveID" Class="char">11</P>
+          <P Name="Extents" Class="double">[745.0, 731.0]</P>
+          <P Name="ZoomFactor" Class="double">1.0</P>
+          <P Name="Offset" Class="double">[0.0, 0.0]</P>
+          <P Name="SceneRectInView" Class="double">[0.0, 0.0, 0.0, 0.0]</P>
+        </Object>
+        <Object ObjectID="10">
+          <P Name="IsActive" Class="logical">0</P>
+          <P Name="IsTabbed" Class="logical">0</P>
+          <P Name="ViewObjType" Class="char">StudioAdapterBlock</P>
+          <P Name="LoadSaveID" Class="char">87</P>
+          <P Name="Extents" Class="double">[1842.0, 477.0]</P>
+          <P Name="ZoomFactor" Class="double">1.0</P>
+          <P Name="Offset" Class="double">[0.0, 0.0]</P>
+          <P Name="SceneRectInView" Class="double">[0.0, 0.0, 0.0, 0.0]</P>
+        </Object>
+        <Object ObjectID="11">
+          <P Name="IsActive" Class="logical">0</P>
+          <P Name="IsTabbed" Class="logical">0</P>
+          <P Name="ViewObjType" Class="char">StudioAdapterBlock</P>
+          <P Name="LoadSaveID" Class="char">9</P>
+          <P Name="Extents" Class="double">[1597.0, 477.0]</P>
+          <P Name="ZoomFactor" Class="double">1.0</P>
+          <P Name="Offset" Class="double">[0.0, 0.0]</P>
+          <P Name="SceneRectInView" Class="double">[0.0, 0.0, 0.0, 0.0]</P>
+        </Object>
+        <Object ObjectID="12">
+          <P Name="IsActive" Class="logical">0</P>
+          <P Name="IsTabbed" Class="logical">0</P>
+          <P Name="ViewObjType" Class="char">StudioAdapterBlock</P>
+          <P Name="LoadSaveID" Class="char">13</P>
+          <P Name="Extents" Class="double">[1515.0, 477.0]</P>
+          <P Name="ZoomFactor" Class="double">1.0</P>
+          <P Name="Offset" Class="double">[0.0, 0.0]</P>
+          <P Name="SceneRectInView" Class="double">[0.0, 0.0, 0.0, 0.0]</P>
+        </Object>
+        <Object ObjectID="13">
+          <P Name="IsActive" Class="logical">0</P>
+          <P Name="IsTabbed" Class="logical">0</P>
+          <P Name="ViewObjType" Class="char">StudioAdapterBlock</P>
+          <P Name="LoadSaveID" Class="char">10</P>
+          <P Name="Extents" Class="double">[880.0, 731.0]</P>
+          <P Name="ZoomFactor" Class="double">1.0</P>
+          <P Name="Offset" Class="double">[0.0, 0.0]</P>
+          <P Name="SceneRectInView" Class="double">[0.0, 0.0, 0.0, 0.0]</P>
+        </Object>
+        <Object ObjectID="14">
+          <P Name="IsActive" Class="logical">0</P>
+          <P Name="IsTabbed" Class="logical">0</P>
+          <P Name="ViewObjType" Class="char">StudioAdapterBlock</P>
+          <P Name="LoadSaveID" Class="char">57</P>
+          <P Name="Extents" Class="double">[1454.0, 741.0]</P>
+          <P Name="ZoomFactor" Class="double">1.0</P>
+          <P Name="Offset" Class="double">[0.0, 0.0]</P>
+          <P Name="SceneRectInView" Class="double">[0.0, 0.0, 0.0, 0.0]</P>
+        </Object>
+        <Object ObjectID="15">
+          <P Name="IsActive" Class="logical">0</P>
+          <P Name="IsTabbed" Class="logical">0</P>
+          <P Name="ViewObjType" Class="char">StudioAdapterBlock</P>
+          <P Name="LoadSaveID" Class="char">18</P>
+          <P Name="Extents" Class="double">[1807.0, 780.0]</P>
+          <P Name="ZoomFactor" Class="double">1.0</P>
+          <P Name="Offset" Class="double">[0.0, 0.0]</P>
+          <P Name="SceneRectInView" Class="double">[0.0, 0.0, 0.0, 0.0]</P>
+        </Object>
+      </Array>
+      <Array PropName="DockComponentsInfo" Type="Simulink.DockComponentInfo" Dimension="1*3">
+        <Object ObjectID="16">
+          <P Name="Type" Class="char">GLUE2:PropertyInspector</P>
+          <P Name="ID" Class="char">Property Inspector</P>
+          <P Name="Visible" Class="logical">0</P>
+          <P Name="CreateCallback" Class="char"/>
+          <P Name="UserData" Class="char"/>
+          <P Name="Floating" Class="logical">0</P>
+          <P Name="DockPosition" Class="char">Right</P>
+          <P Name="Width" Class="int32">512</P>
+          <P Name="Height" Class="int32">384</P>
+          <P Name="Minimized" Class="char">Off</P>
+        </Object>
+        <Object ObjectID="17">
+          <P Name="Type" Class="char">Simulink:Editor:ReferencedFiles</P>
+          <P Name="ID" Class="char">Referenced Files</P>
+          <P Name="Visible" Class="logical">0</P>
+          <P Name="CreateCallback" Class="char"/>
+          <P Name="UserData" Class="char">{&quot;filterShowRefModels&quot;:&quot;true&quot;,&quot;filterShowRefSubs&quot;:&quot;true&quot;,&quot;filterShowOnlyDirtyFiles&quot;:&quot;false&quot;}
+</P>
+          <P Name="Floating" Class="logical">0</P>
+          <P Name="DockPosition" Class="char">Left</P>
+          <P Name="Width" Class="int32">512</P>
+          <P Name="Height" Class="int32">384</P>
+          <P Name="Minimized" Class="char">Unset</P>
+        </Object>
+        <Object ObjectID="18">
+          <P Name="Type" Class="char">GLUE2:DDG Component</P>
+          <P Name="ID" Class="char">SymbolManager</P>
+          <P Name="Visible" Class="logical">0</P>
+          <P Name="CreateCallback" Class="char">Stateflow.Interface.Panel.createSymbolManagerComponent</P>
+          <P Name="UserData" Class="char">0</P>
+          <P Name="Floating" Class="logical">0</P>
+          <P Name="DockPosition" Class="char">Right</P>
+          <P Name="Width" Class="int32">100</P>
+          <P Name="Height" Class="int32">614</P>
+          <P Name="Minimized" Class="char">Unset</P>
+        </Object>
+      </Array>
+      <P Name="WindowState" Class="char">AAAA/wAAAAD9AAAAAwAAAAAAAAC9AAAB+PwCAAAABPsAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAAAAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAAB5AP////sAAABgAFMAaQBtAHUAbABpAG4AawA6AEUAZABpAHQAbwByADoAUgBlAGYAZQByAGUAbgBjAGUAZABGAGkAbABlAHMALwBSAGUAZgBlAHIAZQBuAGMAZQBkACAARgBpAGwAZQBzAAAAAAD/////AAAApwD///8AAAABAAAAggAAAyL8AgAAAAL7AAAAVABHAEwAVQBFADIAOgBQAHIAbwBwAGUAcgB0AHkASQBuAHMAcABlAGMAdABvAHIALwBQAHIAbwBwAGUAcgB0AHkAIABJAG4AcwBwAGUAYwB0AG8AcgAAAACXAAADLAAAAhYA/////AAAAJcAAAMiAAAAAAD////6/////wIAAAAB+wAAAEIARwBMAFUARQAyADoARABEAEcAIABDAG8AbQBwAG8AbgBlAG4AdAAvAFMAeQBtAGIAbwBsAE0AYQBuAGEAZwBlAHIAAAAAAP////8AAAAmAP///wAAAAMAAAdfAAABA/wBAAAAAfv/////AAAAAAD/////AAADFgD///8AAAOdAAADIgAAAAEAAAACAAAAAQAAAAL8AAAAAwAAAAAAAAABAAAANgBjAG8AbABsAGEAcABzAGkAYgBsAGUAUABhAG4AZQBsAFQAbwBvAGwAQgBhAHIATABlAGYAdAMAAAAA/////wAAAAAAAAAAAAAAAQAAAAEAAAA4AGMAbwBsAGwAYQBwAHMAaQBiAGwAZQBQAGEAbgBlAGwAVABvAG8AbABCAGEAcgBSAGkAZwBoAHQCAAAAAP////8AAAAAAAAAAAAAAAMAAAABAAAAOgBjAG8AbABsAGEAcABzAGkAYgBsAGUAUABhAG4AZQBsAFQAbwBvAGwAQgBhAHIAQgBvAHQAdABvAG0AAAAAAP////8AAAAAAAAAAA==</P>
+      <Array PropName="PersistedApps" Type="Cell" Dimension="0*1"/>
+      <P Name="WindowUuid" Class="char">886b551f-7dee-48d4-9975-da15bed714eb</P>
+    </Object>
+    <P Name="BDUuid" Class="char">c7ccf1ef-7e06-4adf-bfb0-b62868e38945</P>
+  </Object>
+</WindowsInfo>
+
+__MWOPC_PACKAGE_END__

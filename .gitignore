@@ -1,0 +1,6 @@
+# Simulink/MATLAB build artifacts and temporary files
+slprj/
+*.slxc
+*.autosave
+*.r20*
+*.mdl.r20*
